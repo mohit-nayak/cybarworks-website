@@ -22,8 +22,8 @@ const HeroBanner = ({
         />
       </div>
 
-      <div className="relative mx-auto mt-44 max-w-3xl space-y-8 p-6 lg:px-8">
-        <h1 className="text-title-primary-sm leading-title-primary-sm bg-primary-gradient lg:leading-title-primary-lg lg:text-title-primary-lg bg-clip-text text-center font-light text-transparent">
+      <div className="relative mx-auto mt-40 max-w-3xl space-y-8 p-6 lg:px-8">
+        <h1 className="text-title-primary-sm leading-title-primary-sm bg-primary-gradient lg:leading-title-primary-lg lg:text-title-primary-lg bg-clip-text text-center font-extralight text-transparent">
           {title}
         </h1>
         <p className="mx-auto max-w-xl text-center text-xl font-light text-secondary-dark">
