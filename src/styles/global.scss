@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "variables";
+@import "fonts";
+@import "common";
+
+:root {
+	--primary-light: #{$primary-light};
+	--primary-semi-dark: #{$primary-semi-dark};
+	--primary-dark: #{$primary-dark};
+
+	--secondary-semi-light: #{$secondary-semi-light};
+	--secondary-light: #{$secondary-light};
+	--secondary-semi-dark: #{$secondary-semi-dark};
+	--secondary-dark: #{$secondary-dark};
+
+	--tertiary-semi-dark: #{$tertiary-semi-dark};
+	--tertiary-dark: #{$tertiary-dark};
+}

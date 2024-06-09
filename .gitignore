@@ -1,3 +1,11 @@
 node_modules/
 .cache/
 public
+
+# local env files
+.env
+
+# misc
+.DS_Store
+*.pem
+.idea
