@@ -22,16 +22,16 @@ module.exports = {
         "tertiary-dark": "var(--tertiary-dark)",
       },
       fontSize: {
-        // "base-lg": "20px",
-        "title-primary-lg": "64px",
-        "title-primary-sm": "38px",
-      },
-      lineHeight: {
-        "title-primary-lg": "72px",
-        "title-primary-sm": "44px",
+        "title-primary-lg": ["64px", "72px"],
+        "title-primary-sm": ["38px", "44px"],
+        "title-secondary-lg": ["56px", "67px"],
+        "title-secondary-sm": ["32px", "38px"],
       },
       maxWidth: {
         "8xl": "85rem",
+      },
+      animation: {
+        "pulse-5s": "pulse 5s linear infinite",
       },
     },
   },

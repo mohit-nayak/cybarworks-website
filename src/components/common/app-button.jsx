@@ -4,6 +4,7 @@ const AppButton = ({
   variant = "primary",
   onClick = () => {},
   className = "",
+  childClassName = "",
   children = "Button",
 }) => {
   let bgGradient = "";
@@ -13,6 +14,7 @@ const AppButton = ({
       break;
 
     case "secondary":
+      break;
 
     default:
       bgGradient = "bg-secondary-gradient";
@@ -23,7 +25,9 @@ const AppButton = ({
       className={`rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
       onClick={onClick}
     >
-      <span className="flex w-full flex-col rounded-full bg-primary-dark px-14 py-4 text-lg font-light text-secondary-dark">
+      <span
+        className={`flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
+      >
         {children}
       </span>
     </button>
