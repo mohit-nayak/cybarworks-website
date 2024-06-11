@@ -3,7 +3,7 @@ import Features1 from "./features-1";
 import twoBoltsImg from "../../assets/images/two-bolts.png";
 import Title from "../common/title";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ className = "" }) => {
   const data = [
     {
       title: "Trusted Experts",
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl py-28">
+    <div className={`mx-auto max-w-6xl pb-28 pt-28 ${className}`}>
       <Title variant="secondary" className="mb-24">
         Why Choose Us
       </Title>

@@ -4,6 +4,7 @@ import HeroBanner from "../components/sections/hero-banner";
 import HowWeHelp from "../components/sections/how-we-help";
 import WhoWeAre from "../components/sections/who-we-are";
 import WhyChooseUs from "../components/sections/why-choose-us";
+import NumberMetrics from "../components/sections/number-metrics";
 
 const IndexPage = () => {
   return (
@@ -15,7 +16,8 @@ const IndexPage = () => {
       />
       <HowWeHelp />
       <WhoWeAre />
-      <WhyChooseUs />
+      <WhyChooseUs className="pb-0" />
+      <NumberMetrics />
     </MainLayout>
   );
 };
