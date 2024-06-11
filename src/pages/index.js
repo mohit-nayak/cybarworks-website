@@ -5,6 +5,8 @@ import HowWeHelp from "../components/sections/how-we-help";
 import WhoWeAre from "../components/sections/who-we-are";
 import WhyChooseUs from "../components/sections/why-choose-us";
 import NumberMetrics from "../components/sections/number-metrics";
+import Testimonials from "../components/sections/testimonials";
+import BlogCarousel from "../components/sections/blog-carousel";
 
 const IndexPage = () => {
   return (
@@ -18,6 +20,8 @@ const IndexPage = () => {
       <WhoWeAre />
       <WhyChooseUs className="pb-0" />
       <NumberMetrics />
+      <Testimonials className="pb-28 pt-44" />
+      <BlogCarousel />
     </MainLayout>
   );
 };

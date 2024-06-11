@@ -3,7 +3,7 @@ import React from "react";
 
 const NumberMetrics = () => {
   return (
-    <section className="relative flex min-h-[440px] flex-col py-6 overflow-hidden">
+    <section className="relative flex min-h-[440px] flex-col overflow-hidden py-6">
       <StaticImage
         src="../../assets/images/shadow-bg-1.png"
         quality={100}

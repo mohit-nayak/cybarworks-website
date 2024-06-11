@@ -10,6 +10,8 @@ module.exports = {
         "primary-gradient":
           "linear-gradient(to right, #9852C5, #8129F1, #007CFF, #239EDB)",
         "secondary-gradient": "linear-gradient(to right, #0F80F8, #3CCBEB)",
+        "secondary-gradient-light":
+          "linear-gradient(to right, rgba(15, 128, 248, 0.1), rgba(60, 203, 235, 0.1))",
       },
       colors: {
         "primary-light": "var(--primary-light)",
