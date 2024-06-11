@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const HowWeHelp = () => {
   return (
-    <section className="py-10">
+    <section className="py-16">
       <div className="mx-auto max-w-6xl">
         <Title variant="secondary" className="mb-10">
           How we help businesses with IT?
@@ -33,7 +33,7 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-1.png"
                 quality={100}
                 formats={["png"]}
-                class="animate-pulse-5s mx-auto h-full max-h-[460px] w-full max-w-[460px]"
+                class="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
                 layout="fullWidth"
                 width={460}
                 height={460}
@@ -62,7 +62,8 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-2.png"
                 quality={100}
                 formats={["png"]}
-                class="animate-pulse-5s mx-auto h-full max-h-[460px] w-full max-w-[460px]"
+                class="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
+                style={{ animationDelay: "1500ms" }}
                 layout="fullWidth"
                 width={460}
                 height={460}
@@ -91,7 +92,8 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-3.png"
                 quality={100}
                 formats={["png"]}
-                class="animate-pulse-5s mx-auto h-full max-h-[460px] w-full max-w-[460px]"
+                class="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
+                style={{ animationDelay: "3000ms" }}
                 layout="fullWidth"
                 width={460}
                 height={460}

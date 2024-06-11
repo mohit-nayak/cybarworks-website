@@ -1,9 +1,16 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: Kanit;
-	background-color: var(--primary-dark);
+  margin: 0;
+  font-family: Kanit;
+  background-color: var(--primary-dark);
+}
+
+p,
+span,
+a {
+  color: var(--secondary-dark);
+  font-weight: 300;
 }

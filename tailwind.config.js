@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         "primary-gradient":
           "linear-gradient(to right, #9852C5, #8129F1, #007CFF, #239EDB)",
+        "secondary-gradient": "linear-gradient(to right, #0F80F8, #3CCBEB)",
       },
       colors: {
         "primary-light": "var(--primary-light)",
