@@ -36,6 +36,9 @@ module.exports = {
       animation: {
         "pulse-5s": "pulse 5s linear infinite",
       },
+      transitionTimingFunction: {
+        primary: "cubic-beizer(.61,.04,.45,.96)",
+      },
     },
   },
   plugins: [],

@@ -18,7 +18,7 @@ const BlogCarousel = () => {
             {blogData.map((blog, index) => (
               <SwiperSlide
                 key={index}
-                className="font-semibol bg-secondary-gradient rounded-[20px] p-[1px]"
+                className="font-semibol rounded-[20px] bg-secondary-gradient p-[1px]"
               >
                 <div className="relative flex w-full flex-col overflow-hidden rounded-[20px] bg-primary-dark text-lg font-light text-secondary-dark">
                   <div className="absolute left-0 top-0 h-full w-full">
@@ -32,7 +32,7 @@ const BlogCarousel = () => {
                       quality={100}
                     />
                   </div>
-                  <div className="bg-secondary-gradient-light flex min-h-[500px] flex-col">
+                  <div className="flex min-h-[500px] flex-col bg-secondary-gradient-light">
                     <img
                       src={blog.thumbnail}
                       alt={blog.title}
@@ -61,6 +61,15 @@ const BlogCarousel = () => {
               </SwiperSlide>
             ))}
           </Carousel>
+        </div>
+
+        <div className="flex flex-col items-center space-y-7">
+          <p className="mt-16 max-w-[440px] text-center">
+            Whether you're seeking cybersecurity strategies, cloud computing
+            insights, or IT management best practices, our insightful blogs have
+            you covered. Stay informed and empowered for success
+          </p>
+          <AppButton variant="primary">Explore More Blogs</AppButton>
         </div>
       </div>
     </section>

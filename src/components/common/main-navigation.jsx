@@ -18,6 +18,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import LocationIcon from "../icons/location-pin";
 import EmailIcon from "../icons/envelope";
 import CallIcon from "../icons/telephone";
+import useWindowPos from "../../hooks/useWindowPos";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -25,10 +26,15 @@ function classNames(...classes) {
 
 const MainNavigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { scrolled } = useWindowPos({ target: 100 });
+
   return (
-    <header className="fixed top-0 z-20 w-full bg-transparent">
+    <header className={`fixed top-0 z-20 w-full`}>
+      <div
+        className={`ease-primary absolute ${scrolled ? "opacity-100" : "opacity-0"} inset-0 bg-secondary-gradient-light transition-opacity duration-500`}
+      />
       <nav
-        className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8"
+        className={`mx-auto flex max-w-8xl items-center justify-between px-6 ${scrolled ? "py-4" : "py-8"} ease-primary transition-all duration-500 lg:px-8`}
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
