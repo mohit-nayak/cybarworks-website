@@ -31,10 +31,10 @@ const MainNavigation = () => {
   return (
     <header className={`fixed top-0 z-20 w-full`}>
       <div
-        className={`ease-primary absolute ${scrolled ? "opacity-100" : "opacity-0"} inset-0 bg-secondary-gradient-light transition-opacity duration-500`}
+        className={`absolute ease-primary ${scrolled ? "opacity-100" : "opacity-0"} z50 inset-0 bg-primary-light backdrop-blur-[5px] transition-opacity duration-500`}
       />
       <nav
-        className={`mx-auto flex max-w-8xl items-center justify-between px-6 ${scrolled ? "py-4" : "py-8"} ease-primary transition-all duration-500 lg:px-8`}
+        className={`mx-auto flex max-w-8xl items-center justify-between px-6 ${scrolled ? "py-4" : "py-8"} relative transition-all duration-500 ease-primary lg:px-8`}
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
