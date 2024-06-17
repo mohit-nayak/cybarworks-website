@@ -78,17 +78,18 @@ const MainNavigation = () => {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-primary-dark shadow-lg ring-1 ring-gray-900/5">
-                      <div className="p-4">
+                    <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-lg bg-primary-dark bg-secondary-gradient p-[1px] shadow-lg ring-1 ring-gray-900/5">
+                      <div className="absolute inset-0 rounded-lg bg-secondary-gradient-light" />
+                      <div className="rounded-lg bg-primary-dark p-3">
                         {navItem.children.map((navItemChild, childIndex) => (
                           <div
                             key={childIndex}
-                            className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-secondary-semi-light"
+                            className="group relative flex items-center gap-x-6 rounded-lg px-3 py-2 text-sm leading-6"
                           >
                             <div className="flex-auto">
                               <Link
                                 to={navItemChild.url}
-                                className="block group-hover:text-primary-dark"
+                                className="block text-base font-light group-hover:text-tertiary-dark"
                               >
                                 {navItemChild.name}
                                 <span className="absolute inset-0" />

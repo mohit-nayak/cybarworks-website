@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import AppButton from "../common/app-button";
 import Title from "../common/title";
 
-const ServicesBanner = ({
+const HeroBanner2 = ({
   title = "",
   description = "",
   ctaText = "",
@@ -58,4 +58,4 @@ const ServicesBanner = ({
   );
 };
 
-export default ServicesBanner;
+export default HeroBanner2;

@@ -12,6 +12,10 @@ import EmailIcon from "../icons/envelope";
 import CallIcon from "../icons/telephone";
 
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="relative flex h-[435px] max-h-full w-screen flex-col overflow-hidden">
       <div className="absolute top-0 h-full w-full">
@@ -122,6 +126,7 @@ const Footer = () => {
             <AppButton
               variant="primary"
               childClassName="px-8 py-2 text-xs font-light"
+              onClick={handleScrollToTop}
             >
               Back to top
             </AppButton>

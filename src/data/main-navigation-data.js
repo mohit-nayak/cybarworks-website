@@ -17,11 +17,11 @@ const mainNavigationData = {
         },
         {
           name: "Security Services",
-          url: "/services/security",
+          url: "/services/security-services",
         },
         {
           name: "IT Consulting",
-          url: "/services/it-consulting",
+          url: "/services/consulting-services",
         },
       ],
     },
