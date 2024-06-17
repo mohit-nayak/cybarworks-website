@@ -6,6 +6,7 @@ import Title from "../common/title";
 const HeroBanner2 = ({
   title = "",
   description = "",
+  cta = true,
   ctaText = "",
   ctaOnClick = () => {},
   artifact1,
@@ -50,9 +51,11 @@ const HeroBanner2 = ({
         <p className="mx-auto max-w-lg text-center text-xl font-light text-secondary-dark">
           {description}
         </p>
-        <div className="flex justify-center">
-          <AppButton onClick={ctaOnClick}>{ctaText}</AppButton>
-        </div>
+        {cta && (
+          <div className="flex justify-center">
+            <AppButton onClick={ctaOnClick}>{ctaText}</AppButton>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ const metrics = [
   },
 ];
 
-const IndexPage = () => {
+const HomePage = () => {
   return (
     <MainLayout>
       <HeroBanner
@@ -50,6 +50,6 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default HomePage;
 
 export const Head = () => <title>Cyber Works</title>;

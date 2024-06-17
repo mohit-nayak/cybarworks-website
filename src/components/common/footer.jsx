@@ -69,7 +69,7 @@ const Footer = () => {
                   <Link
                     key={index}
                     to={item.url}
-                    className="text-base font-light text-secondary-semi-light"
+                    className="text-base font-light text-secondary-semi-light hover:text-tertiary-dark"
                   >
                     {item.name}
                   </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
                   <Link
                     key={index}
                     to={item.url}
-                    className="text-base font-light text-secondary-semi-light"
+                    className="text-base font-light text-secondary-semi-light hover:text-tertiary-dark"
                   >
                     {item.name}
                   </Link>
@@ -95,16 +95,16 @@ const Footer = () => {
             <div className="space-y-4">
               <Link
                 to={`callto:${footerData.contact.call}`}
-                className="flex items-center gap-3 text-secondary-semi-light"
+                className="group flex items-center gap-3 text-secondary-semi-light hover:text-tertiary-dark"
               >
-                <CallIcon className="aspect-square h-5 w-5 fill-secondary-semi-light" />
+                <CallIcon className="aspect-square h-5 w-5 fill-secondary-semi-light group-hover:fill-tertiary-dark" />
                 {footerData.contact.call}
               </Link>
               <Link
                 to={`mailto:${footerData.contact.email}`}
-                className="flex items-center gap-3 text-secondary-semi-light"
+                className="group flex items-center gap-3 text-secondary-semi-light hover:text-tertiary-dark"
               >
-                <EmailIcon className="aspect-square h-5 w-5 fill-secondary-semi-light" />
+                <EmailIcon className="aspect-square h-5 w-5 fill-secondary-semi-light group-hover:fill-tertiary-dark" />
                 {footerData.contact.email}
               </Link>
               <div className="flex items-center gap-3 font-light text-secondary-semi-light">
