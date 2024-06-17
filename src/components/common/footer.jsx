@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative flex h-[435px] max-h-full w-screen flex-col overflow-hidden">
+    <footer className="relative flex h-[435px] max-h-full flex-col overflow-hidden">
       <div className="absolute top-0 h-full w-full">
         <StaticImage
           src="../../assets/images/footer-bg.png"
