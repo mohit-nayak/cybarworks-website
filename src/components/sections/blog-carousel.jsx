@@ -8,7 +8,7 @@ import AppButton from "../common/app-button";
 
 const BlogCarousel = () => {
   return (
-    <section className="py-28">
+    <section className="pt-28">
       <div className="">
         <Title variant="secondary" className="mb-10">
           Discover our featured blogs

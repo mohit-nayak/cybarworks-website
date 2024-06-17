@@ -10,6 +10,8 @@ module.exports = {
         "primary-gradient":
           "linear-gradient(to right, #9852C5, #8129F1, #007CFF, #239EDB)",
         "secondary-gradient": "linear-gradient(to right, #0F80F8, #3CCBEB)",
+        "secondary-gradient-semi-dark":
+          "linear-gradient(to right, rgba(15, 128, 248, 0.9), rgba(60, 203, 235, 0.9))",
         "secondary-gradient-light":
           "linear-gradient(to right, rgba(15, 128, 248, 0.1), rgba(60, 203, 235, 0.1))",
       },
@@ -35,6 +37,7 @@ module.exports = {
       },
       animation: {
         "pulse-5s": "pulse 5s linear infinite",
+        "spin-pulse-2": "spin 120s linear infinite, pulse 8s linear infinite",
       },
       transitionTimingFunction: {
         primary: "cubic-beizer(.61,.04,.45,.96)",

@@ -6,12 +6,16 @@ import { SwiperSlide } from "swiper/react";
 import { StaticImage } from "gatsby-plugin-image";
 import StarGradient from "../icons/star-gradient";
 
-const Testimonials = ({ className = "" }) => {
+const Testimonials = ({
+  className = "",
+  title = "",
+  data = testimonialsData,
+}) => {
   return (
     <section className={`py-28 ${className}`}>
       <div className="">
         <Title variant="secondary" className="mb-10">
-          How have we helped other businesses?
+          {title}
         </Title>
         <div>
           <Carousel>
@@ -32,7 +36,7 @@ const Testimonials = ({ className = "" }) => {
                       quality={100}
                     />
                   </div>
-                  <div className="bg-secondary-gradient-light min-h-[480px] px-10 py-8">
+                  <div className="min-h-[480px] bg-secondary-gradient-light px-10 py-8">
                     <div className="text-2xl">{testimonial.name}</div>
                     <div className="mb-3 text-base">{`${testimonial.position}, ${testimonial.company}`}</div>
                     <div className="mb-6 flex gap-x-2">

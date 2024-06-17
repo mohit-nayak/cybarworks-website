@@ -7,6 +7,26 @@ import WhyChooseUs from "../components/sections/why-choose-us";
 import NumberMetrics from "../components/sections/number-metrics";
 import Testimonials from "../components/sections/testimonials";
 import BlogCarousel from "../components/sections/blog-carousel";
+import CtaBanner from "../components/sections/cta-banner";
+
+const metrics = [
+  {
+    label: "Years of experience",
+    value: "28+",
+  },
+  {
+    label: "IT issues resolved",
+    value: "98%",
+  },
+  {
+    label: "Clients served",
+    value: "500+",
+  },
+  {
+    label: "ROI of Clients",
+    value: "35%",
+  },
+];
 
 const IndexPage = () => {
   return (
@@ -19,9 +39,13 @@ const IndexPage = () => {
       <HowWeHelp />
       <WhoWeAre />
       <WhyChooseUs className="pb-0" />
-      <NumberMetrics />
-      <Testimonials className="pb-28 pt-44" />
+      <NumberMetrics metrics={metrics} />
+      <Testimonials
+        title="How have we helped other businesses?"
+        className="pb-28 pt-44"
+      />
       <BlogCarousel />
+      <CtaBanner title="Ready to Leave IT Worries Behind?" />
     </MainLayout>
   );
 };

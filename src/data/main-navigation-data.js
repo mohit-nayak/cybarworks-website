@@ -13,7 +13,7 @@ const mainNavigationData = {
       children: [
         {
           name: "Managed IT Services",
-          url: "/services/managed-it",
+          url: "/services/it-services",
         },
         {
           name: "Security Services",

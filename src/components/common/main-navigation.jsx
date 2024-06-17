@@ -31,7 +31,7 @@ const MainNavigation = () => {
   return (
     <header className={`fixed top-0 z-20 w-full`}>
       <div
-        className={`absolute ease-primary ${scrolled ? "opacity-100" : "opacity-0"} z50 inset-0 bg-primary-light backdrop-blur-[5px] transition-opacity duration-500`}
+        className={`absolute ease-primary ${scrolled ? "opacity-100" : "opacity-0"} z50 inset-0 bg-primary-light backdrop-blur-md transition-opacity duration-500`}
       />
       <nav
         className={`mx-auto flex max-w-8xl items-center justify-between px-6 ${scrolled ? "py-4" : "py-8"} relative transition-all duration-500 ease-primary lg:px-8`}
@@ -78,17 +78,17 @@ const MainNavigation = () => {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-primary-dark shadow-lg ring-1 ring-gray-900/5">
+                    <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-primary-dark shadow-lg ring-1 ring-gray-900/5">
                       <div className="p-4">
                         {navItem.children.map((navItemChild, childIndex) => (
                           <div
                             key={childIndex}
-                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-secondary-semi-dark"
+                            className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-secondary-semi-light"
                           >
                             <div className="flex-auto">
                               <Link
                                 to={navItemChild.url}
-                                className="block font-semibold text-secondary-dark"
+                                className="block group-hover:text-primary-dark"
                               >
                                 {navItemChild.name}
                                 <span className="absolute inset-0" />
