@@ -31,7 +31,7 @@ const HeroBanner2 = ({
           <img
             src={artifact1}
             alt="Artifact"
-            class={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[300px] lg:top-[180px] ${artifactAnimation}`}
+            class={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[280px] lg:top-[180px] ${artifactAnimation}`}
             width={352}
             height={352}
           />
