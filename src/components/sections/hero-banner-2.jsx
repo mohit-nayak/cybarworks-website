@@ -27,12 +27,12 @@ const HeroBanner2 = ({
         />
       </div>
 
-      <div className="relative mx-auto mt-40 max-w-3xl space-y-8 p-6 lg:px-8">
+      <div className="relative mx-auto mt-40 max-w-2xl space-y-8 p-6 lg:px-8">
         {artifact1 && (
           <img
             src={artifact1}
             alt="Artifact"
-            class={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[280px] lg:top-[180px] ${artifactAnimation}`}
+            class={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[300px] lg:top-[180px] ${artifactAnimation}`}
             width={352}
             height={352}
           />
@@ -41,7 +41,7 @@ const HeroBanner2 = ({
           <img
             src={artifact2}
             alt="Artifact"
-            class={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[140px] lg:-top-[80px] ${artifactAnimation}`}
+            class={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[160px] lg:-top-[80px] ${artifactAnimation}`}
             width={180}
             height={180}
           />
