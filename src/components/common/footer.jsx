@@ -22,11 +22,12 @@ const Footer = () => {
         <StaticImage
           src="../../assets/images/footer-bg.png"
           formats={["png"]}
-          class="h-full w-full"
+          className="h-full w-full"
           layout="fullWidth"
           width={1440}
           height={1248}
           quality={100}
+          alt="bg"
         />
       </div>
 

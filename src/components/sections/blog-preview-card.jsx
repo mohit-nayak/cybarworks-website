@@ -3,6 +3,10 @@ import { StaticImage } from "gatsby-plugin-image";
 import AppButton from "../common/app-button";
 
 const BlogPreviewCard = ({ post }) => {
+  const bannerImgUrl = require(
+    `../../assets/images/blog/${post.banner.filename}`,
+  );
+
   return (
     <div className="rounded-[20px] bg-secondary-gradient p-[1px] font-semibold">
       <div className="relative flex w-full flex-col overflow-hidden rounded-[20px] bg-primary-dark text-lg font-light text-secondary-dark">
@@ -10,26 +14,34 @@ const BlogPreviewCard = ({ post }) => {
           <StaticImage
             src="../../assets/images/shadow-bg-2.png"
             formats={["png"]}
-            class="h-full w-full"
+            className="h-full w-full"
             layout="fullWidth"
             width={220}
             height={182}
             quality={100}
+            alt="shadow"
           />
         </div>
         <div className="relative flex min-h-[465px] flex-col bg-secondary-gradient-light">
           <img
-            src={post.thumbnail}
-            alt={post.title}
+            src={bannerImgUrl.default}
+            alt={post.banner.alt}
             className="h-[200px] w-full object-cover"
             width={360}
             height={200}
           />
-          <div className="flex flex-1 flex-col justify-between px-7 pb-10 pt-5">
+          <div className="flex flex-1 flex-col justify-between px-7 pb-8 pt-5">
             <div>
-              <div className="mb-3 flex items-center justify-between text-base text-secondary-light opacity-70">
-                <span>#{post.category.name}</span>
-                <span>{post.date}</span>
+              <div className="mb-3 flex items-start justify-between gap-2 text-base text-secondary-light opacity-70">
+                <div className="flex flex-col">
+                  <span className="line-clamp-1">#{post?.tags[0]}</span>
+                  {post?.tags?.length > 1 && (
+                    <span className="cursor-pointer text-xs italic underline">
+                      See all tags
+                    </span>
+                  )}
+                </div>
+                <span className="whitespace-nowrap">{post.pubDate}</span>
               </div>
               <h5 className="mb-8 line-clamp-3 text-xl">{post.title}</h5>
             </div>

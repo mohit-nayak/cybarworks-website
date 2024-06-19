@@ -19,11 +19,12 @@ const HeroBanner2 = ({
         <StaticImage
           src="../../assets/images/services-hero-bg.png"
           formats={["png"]}
-          class="h-full w-full"
+          className="h-full w-full"
           layout="fullWidth"
           width={1440}
           height={920}
           quality={100}
+          alt="hero bg"
         />
       </div>
 
@@ -32,7 +33,7 @@ const HeroBanner2 = ({
           <img
             src={artifact1}
             alt="Artifact"
-            class={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[300px] lg:top-[180px] ${artifactAnimation}`}
+            className={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[300px] lg:top-[180px] ${artifactAnimation}`}
             width={352}
             height={352}
           />
@@ -41,7 +42,7 @@ const HeroBanner2 = ({
           <img
             src={artifact2}
             alt="Artifact"
-            class={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[160px] lg:-top-[80px] ${artifactAnimation}`}
+            className={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[160px] lg:-top-[80px] ${artifactAnimation}`}
             width={180}
             height={180}
           />

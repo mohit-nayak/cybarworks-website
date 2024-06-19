@@ -38,10 +38,11 @@ const WhoWeAre = ({ className = "" }) => {
               src="../../assets/images/team-1.png"
               quality={100}
               formats={["png"]}
-              class="mx-auto h-full max-h-[544px] w-full max-w-[444px]"
+              className="mx-auto h-full max-h-[544px] w-full max-w-[444px]"
               layout="fullWidth"
               width={444}
               height={544}
+              alt="who we are"
             />
           </div>
         </div>

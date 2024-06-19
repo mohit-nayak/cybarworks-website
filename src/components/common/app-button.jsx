@@ -28,7 +28,7 @@ const AppButton = ({
     return (
       <Link
         to={href}
-        className={`rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
+        className={`block rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
       >
         <span
           className={`flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}

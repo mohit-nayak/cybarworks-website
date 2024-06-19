@@ -31,7 +31,7 @@ const ServiceOverview = ({
             <img
               src={image}
               alt={imageAlt}
-              class="mx-auto h-full max-h-[544px] w-full max-w-[444px]"
+              className="mx-auto h-full max-h-[544px] w-full max-w-[444px]"
               width={444}
               height={544}
             />

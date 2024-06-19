@@ -1,13 +1,13 @@
 ---
 slug: "blog-1"
-title: "Innovative ways of using Nord VPN to safeguard business data and transactions."
+title: "Some other blog"
 pubDate: 6 July, 2024
 description: "This is the first post of my new Astro blog."
-author: "Astro Learner"
+author: "Mohit Nayak"
 banner:
-  filename: "blog-1.png"
+  filename: "blog-2.png"
   alt: "Innovative ways"
-tags: ["Miscellaneous"]
+tags: ["Security"]
 ---
 
 # My First Blog Post

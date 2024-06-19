@@ -1,8 +1,8 @@
 import React from "react";
-import { categories } from "../../data/blog-data";
 import AppButton from "../common/app-button";
+import { tagNameToSlug } from "../../utils/tags";
 
-const BlogCategories = () => {
+const BlogCategories = ({ allTags = [] }) => {
   return (
     <div className="flex flex-col justify-center gap-6 pr-10">
       <AppButton
@@ -13,15 +13,15 @@ const BlogCategories = () => {
       >
         All Blogs
       </AppButton>
-      {categories.map((category) => (
+      {allTags.map((tag) => (
         <AppButton
-          key={category.slug}
+          key={tag}
           as="link"
           variant="secondary"
-          href={`/blog?category=${category.slug}#posts`}
+          href={`/blog?category=${tagNameToSlug(tag)}#posts`}
           childClassName="text-center max-w-xs"
         >
-          {category.name}
+          {tag}
         </AppButton>
       ))}
     </div>

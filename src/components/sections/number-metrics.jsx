@@ -9,10 +9,11 @@ const NumberMetrics = ({ metrics = [] }) => {
           src="../../assets/images/shadow-bg-1.png"
           quality={100}
           formats={["png"]}
-          class="h-full min-h-[440px] w-full"
+          className="h-full min-h-[440px] w-full"
           layout="fullWidth"
           width={1440}
           height={440}
+          alt="shadow"
         />
       </div>
       <div className="relative mx-auto mt-auto max-w-6xl lg:grid lg:grid-cols-4 lg:gap-x-16">

@@ -14,11 +14,12 @@ const SocialBanner = ({ title = "" }) => {
         <StaticImage
           src="../../assets/images/cta-banner-bg.png"
           formats={["png"]}
-          class="h-full w-full"
+          className="h-full w-full"
           layout="fullWidth"
           width={1440}
           height={1248}
           quality={100}
+          alt="bg"
         />
       </div>
       <div className="relative mx-auto max-w-3xl space-y-10 p-6 lg:px-8">

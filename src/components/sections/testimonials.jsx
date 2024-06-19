@@ -29,11 +29,12 @@ const Testimonials = ({
                     <StaticImage
                       src="../../assets/images/shadow-bg-2.png"
                       formats={["png"]}
-                      class="h-full w-full"
+                      className="h-full w-full"
                       layout="fullWidth"
                       width={220}
                       height={182}
                       quality={100}
+                      alt="shadow"
                     />
                   </div>
                   <div className="min-h-[480px] bg-secondary-gradient-light px-10 py-8">

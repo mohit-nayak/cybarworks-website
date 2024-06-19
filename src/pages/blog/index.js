@@ -1,20 +1,44 @@
 import React from "react";
+import { graphql } from "gatsby";
 import MainLayout from "../../components/layouts/main-layout";
 import BlogBanner from "../../components/sections/blog/blog-banner";
 import BlogListWithCategories from "../../components/sections/blog/blog-list-with-categories";
 import BlogCTA from "../../components/sections/blog/blog-cta";
 
-const BlogPage = ({ location }) => {
+const BlogPage = ({ location, data }) => {
   const params = new URLSearchParams(location.search);
   const activeCategory = params.get("category");
 
   return (
     <MainLayout>
       <BlogBanner />
-      <BlogListWithCategories activeCategory={activeCategory} />
+      <BlogListWithCategories
+        posts={data.allMdx.nodes}
+        activeCategory={activeCategory}
+      />
       <BlogCTA />
     </MainLayout>
   );
 };
+
+export const query = graphql`
+  query MyQuery {
+    allMdx {
+      nodes {
+        id
+        frontmatter {
+          title
+          slug
+          pubDate
+          tags
+          banner {
+            filename
+            alt
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default BlogPage;
