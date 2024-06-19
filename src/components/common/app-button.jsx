@@ -17,10 +17,11 @@ const AppButton = ({
       break;
 
     case "secondary":
+      bgGradient = "bg-secondary-gradient";
       break;
 
     default:
-      bgGradient = "bg-secondary-gradient";
+      bgGradient = "bg-primary-gradient";
   }
 
   if (as === "link") {
