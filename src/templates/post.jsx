@@ -8,9 +8,12 @@ import PostBanner from "../components/sections/blog-post/post-banner";
 const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data, children }) {
-  const bannerImgUrl = require(
-    `../assets/images/blog/${data.mdx.frontmatter.banner.filename}`,
-  );
+  const bannerImgData = {
+    image:
+      data?.mdx?.frontmatter?.banner?.filename?.childImageSharp
+        ?.gatsbyImageData,
+    alt: data?.mdx?.frontmatter?.banner?.alt,
+  };
 
   return (
     <MainLayout>
@@ -18,8 +21,7 @@ export default function PageTemplate({ data, children }) {
         title={data.mdx.frontmatter.title}
         date={data.mdx.frontmatter.pubDate}
         tags={data.mdx.frontmatter.tags}
-        bannerImgUrl={bannerImgUrl.default}
-        bannerImgAlt={data.mdx.frontmatter.banner.alt}
+        bannerImgData={bannerImgData}
       />
       <MDXProvider components={shortcodes}>
         <div className="mx-auto max-w-3xl p-6 lg:px-8">{children}</div>
@@ -36,7 +38,11 @@ export const query = graphql`
         pubDate
         tags
         banner {
-          filename
+          filename {
+            childImageSharp {
+              gatsbyImageData(width: 800)
+            }
+          }
           alt
         }
       }

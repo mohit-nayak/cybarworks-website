@@ -1,11 +1,15 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import AppButton from "../common/app-button";
 
 const BlogPreviewCard = ({ post }) => {
-  const bannerImgUrl = require(
-    `../../assets/images/blog/${post.banner.filename}`,
+  const bannerImg = getImage(
+    post?.banner?.filename?.childImageSharp?.gatsbyImageData,
   );
+
+  console.log("data", bannerImg);
+
 
   return (
     <div className="rounded-[20px] bg-secondary-gradient p-[1px] font-semibold">
@@ -23,9 +27,9 @@ const BlogPreviewCard = ({ post }) => {
           />
         </div>
         <div className="relative flex min-h-[465px] flex-col bg-secondary-gradient-light">
-          <img
-            src={bannerImgUrl.default}
-            alt={post.banner.alt}
+          <GatsbyImage
+            image={bannerImg}
+            alt={post?.banner?.alt}
             className="h-[200px] w-full object-cover"
             width={360}
             height={200}
@@ -34,7 +38,7 @@ const BlogPreviewCard = ({ post }) => {
             <div>
               <div className="mb-3 flex items-start justify-between gap-2 text-base text-secondary-light opacity-70">
                 <div className="flex flex-col">
-                  <span className="line-clamp-1">#{post?.tags[0]}</span>
+                  <span className="line-clamp-1">#{post?.tags?.[0]}</span>
                   {post?.tags?.length > 1 && (
                     <span className="cursor-pointer text-xs italic underline">
                       See all tags

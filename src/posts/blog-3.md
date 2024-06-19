@@ -1,11 +1,11 @@
 ---
-slug: "blog-1"
+slug: "blog-3"
 title: "Some other blog"
 pubDate: 6 July, 2024
 description: "This is the first post of my new Astro blog."
 author: "Mohit Nayak"
 banner:
-  filename: "blog-3.png"
+  filename: ../assets/images/blog/blog-3.png
   alt: "Innovative ways"
 tags: ["Miscellaneous", "Managed IT", "Consulting"]
 ---

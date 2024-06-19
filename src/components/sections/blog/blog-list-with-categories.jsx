@@ -1,7 +1,7 @@
 import React from "react";
 import BlogList from "../blog-list";
 import BlogCategories from "../blog-categories";
-import { getTagsFromPosts, getTagsSlug } from "../../../utils/tags";
+import { getTagsFromPosts } from "../../../utils/tags";
 import { getPostsByTag } from "../../../utils/post";
 
 const BlogListWithCategories = ({ posts = [], activeCategory }) => {

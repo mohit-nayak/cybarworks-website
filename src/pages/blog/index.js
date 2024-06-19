@@ -8,7 +8,7 @@ import BlogCTA from "../../components/sections/blog/blog-cta";
 const BlogPage = ({ location, data }) => {
   const params = new URLSearchParams(location.search);
   const activeCategory = params.get("category");
-
+  
   return (
     <MainLayout>
       <BlogBanner />
@@ -32,7 +32,11 @@ export const query = graphql`
           pubDate
           tags
           banner {
-            filename
+            filename {
+              childImageSharp {
+                gatsbyImageData(width: 800)
+              }
+            }
             alt
           }
         }
