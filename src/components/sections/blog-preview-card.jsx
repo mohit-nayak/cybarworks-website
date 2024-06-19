@@ -51,7 +51,7 @@ const BlogPreviewCard = ({ post }) => {
             </div>
             <AppButton
               as="link"
-              href={post?.url ?? "#posts"}
+              href={`/blog/${post?.slug}`}
               variant="primary"
               className="mx-auto max-w-max"
               childClassName="text-sm font-normal py-1 px-8"
