@@ -8,7 +8,7 @@ const BlogCategories = () => {
       <AppButton
         as="link"
         variant="secondary"
-        href={`/blog`}
+        href={`/blog#posts`}
         childClassName="text-center max-w-xs"
       >
         All Blogs
@@ -18,7 +18,7 @@ const BlogCategories = () => {
           key={category.slug}
           as="link"
           variant="secondary"
-          href={`/blog?category=${category.slug}`}
+          href={`/blog?category=${category.slug}#posts`}
           childClassName="text-center max-w-xs"
         >
           {category.name}

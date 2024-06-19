@@ -6,21 +6,25 @@ import blogData from "../../../data/blog-data";
 const BlogListWithCategories = ({ activeCategory }) => {
   let posts = blogData;
   if (activeCategory) {
-    posts = blogData.filter((post) => post.category === activeCategory);
+    posts = blogData.filter((post) => post.category.slug === activeCategory);
   }
 
-  console.log("params", activeCategory);
-
   return (
-    <section className="mx-auto max-w-7xl pb-16">
+    <section className="relative mx-auto max-w-7xl overflow-hidden pb-16">
       <div className="lg:grid lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-3">
           <BlogCategories />
         </div>
         <div className="lg:col-span-9">
-          <BlogList posts={posts} />
+          <BlogList posts={posts} activeCategory={activeCategory} />
         </div>
       </div>
+
+      {/* To scroll to blog section with offset */}
+      <div
+        className="invisible absolute -top-48 h-3 w-full bg-white"
+        id="posts"
+      />
     </section>
   );
 };

@@ -28,14 +28,14 @@ const BlogPreviewCard = ({ post }) => {
           <div className="flex flex-1 flex-col justify-between px-7 pb-10 pt-5">
             <div>
               <div className="mb-3 flex items-center justify-between text-base text-secondary-light opacity-70">
-                <span>#{post.category}</span>
+                <span>#{post.category.name}</span>
                 <span>{post.date}</span>
               </div>
               <h5 className="mb-8 line-clamp-3 text-xl">{post.title}</h5>
             </div>
             <AppButton
               as="link"
-              href="/"
+              href={post?.url ?? "#posts"}
               variant="primary"
               className="mx-auto max-w-max"
               childClassName="text-sm font-normal py-1 px-8"

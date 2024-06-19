@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Kanit;
@@ -14,4 +18,3 @@ a {
   color: var(--secondary-dark);
   font-weight: 300;
 }
-
