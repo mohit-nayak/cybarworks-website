@@ -9,7 +9,7 @@ const NumberMetrics = ({ metrics = [] }) => {
           src="../../assets/images/shadow-bg-1.png"
           quality={100}
           formats={["png"]}
-          className="h-full min-h-[440px] w-full"
+          className="h-full min-h-[440px] w-full animate-pulse-5s"
           layout="fullWidth"
           width={1440}
           height={440}
