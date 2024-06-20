@@ -7,7 +7,7 @@ author: "Mohit Nayak"
 banner:
   filename: ../assets/images/blog/blog-3.png
   alt: "Innovative ways"
-tags: ["Miscellaneous", "Managed IT", "Consulting"]
+tags: ["Managed IT"]
 ---
 
 # My First Blog Post

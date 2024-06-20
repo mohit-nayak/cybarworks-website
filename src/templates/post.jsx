@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { Link } from "gatsby";
 import MainLayout from "../components/layouts/main-layout";
 import PostBanner from "../components/sections/blog-post/post-banner";
+import BlogPostCTA from "../components/sections/blog-post/post-cta";
 
 const shortcodes = { Link }; // Provide common components here
 
@@ -24,8 +25,11 @@ export default function PageTemplate({ data, children }) {
         bannerImgData={bannerImgData}
       />
       <MDXProvider components={shortcodes}>
-        <div className="mx-auto max-w-3xl p-6 lg:px-8">{children}</div>
+        <div className="blog-post mx-auto mt-6 max-w-3xl p-6 lg:px-8">
+          {children}
+        </div>
       </MDXProvider>
+      <BlogPostCTA />
     </MainLayout>
   );
 }

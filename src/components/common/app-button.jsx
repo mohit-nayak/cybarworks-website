@@ -31,7 +31,7 @@ const AppButton = ({
         className={`block rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
       >
         <span
-          className={`flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
+          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
         >
           {children}
         </span>
@@ -44,7 +44,7 @@ const AppButton = ({
         onClick={onClick}
       >
         <span
-          className={`flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
+          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
         >
           {children}
         </span>

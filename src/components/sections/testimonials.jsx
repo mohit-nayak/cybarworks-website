@@ -22,7 +22,7 @@ const Testimonials = ({
             {testimonialsData.map((testimonial, index) => (
               <SwiperSlide
                 key={index}
-                className="font-semibol rounded-[20px] bg-primary-gradient p-[1px]"
+                className="font-semibold overflow-hidden rounded-[20px] bg-primary-gradient p-[1px]"
               >
                 <div className="relative flex w-full flex-col rounded-[20px] bg-primary-dark text-lg font-light text-secondary-dark">
                   <div className="absolute left-0 top-0 h-full w-full">

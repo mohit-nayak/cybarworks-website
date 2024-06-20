@@ -10,20 +10,30 @@ banner:
 tags: ["Miscellaneous"]
 ---
 
-# My First Blog Post
+**This is the introduction of the blog content. This content is same size as the body text but smaller than the heading within the blog content.**
 
-Published on: 2022-07-01
+Lorem ipsum dolor sit amet consectetur. Nunc semper egestas egestas laoreet in sociis. Donec proin nunc hendrerit mauris massa ut elit. Vel pharetra morbi tellus tempus interdum erat aliquet elementum.
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+Diam porta molestie eleifend urna vitae neque nulla. Erat in elementum lacus pharetra nulla risus. Tincidunt suspendisse nunc neque sit proin eget vel dignissim at. Aliquet nec vestibulum enim donec pellentesque.
 
-## What I've accomplished
+_“This texts can be a highlighted quotation or fact for people to read. This may grab their attention if they are just scrolling through the article.”_
+<br/>
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+## This is a heading with in the blog content
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+   <br />
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+1. #### 1. This is a sub heading
 
-## What's next
+   - Tellus ullamcorper justo euismod tincidunt id. Vel vitae ultrices metus vestibulum libero sed a morbi velit. Etiam varius fames phasellus pulvinar faucibus nisl mattis sed et.
+   - Sit malesuada id auctor eros aliquam feugiat. At eu massa vestibulum praesent facilisis. Viverra sagittis metus ut integer.
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+<br />
+
+2. #### 2. This is another sub heading
+
+   - Tellus ullamcorper justo euismod tincidunt id. Vel vitae ultrices metus vestibulum libero sed a morbi velit. Etiam varius fames phasellus pulvinar faucibus nisl mattis sed et.
+   - Sit malesuada id auctor eros aliquam feugiat. At eu massa vestibulum praesent facilisis. Viverra sagittis metus ut integer.
+
+<br />
+This last paragraph can be used to tell the readers to contact CybarWorks for some particular service which related to the specific blog.

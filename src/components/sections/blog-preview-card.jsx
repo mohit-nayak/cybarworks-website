@@ -8,11 +8,8 @@ const BlogPreviewCard = ({ post }) => {
     post?.banner?.filename?.childImageSharp?.gatsbyImageData,
   );
 
-  console.log("data", bannerImg);
-
-
   return (
-    <div className="rounded-[20px] bg-secondary-gradient p-[1px] font-semibold">
+    <div className="overflow-hidden rounded-[20px] bg-secondary-gradient p-[1px] font-semibold">
       <div className="relative flex w-full flex-col overflow-hidden rounded-[20px] bg-primary-dark text-lg font-light text-secondary-dark">
         <div className="absolute left-0 top-0 h-full w-full">
           <StaticImage
@@ -54,8 +51,9 @@ const BlogPreviewCard = ({ post }) => {
               href={`/blog/${post?.slug}`}
               variant="primary"
               className="mx-auto max-w-max"
-              childClassName="text-sm font-normal py-1 px-8"
+              childClassName="text-sm font-normal py-1 px-8 bg-none overflow-hidden"
             >
+              <div className="absolute left-0 top-0 h-full w-full bg-secondary-gradient-light" />
               Read More
             </AppButton>
           </div>

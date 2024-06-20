@@ -18,3 +18,38 @@ a {
   color: var(--secondary-dark);
   font-weight: 300;
 }
+
+.blog-post {
+  * {
+    color: var(--secondary-dark);
+  }
+
+  h2 {
+    font-size: 3.25rem;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  p, li {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 275;
+  }
+
+  ol ul,
+  ul ol {
+    padding-left: 2rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+}
