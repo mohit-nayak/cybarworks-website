@@ -40,7 +40,7 @@ const AccordionContent = ({ title = "", data = [], className = "" }) => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 -translate-y-6"
                     >
-                      <DisclosurePanel className="max-w-3xl origin-top pt-3 text-lg font-thin text-secondary-dark transition">
+                      <DisclosurePanel className="fontli\\ max-w-3xl origin-top pt-3 text-lg text-secondary-dark transition">
                         {entry.description}
                       </DisclosurePanel>
                     </Transition>
