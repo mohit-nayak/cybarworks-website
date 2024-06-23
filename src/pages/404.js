@@ -4,14 +4,12 @@ import ContactUsBanner from "../components/sections/contact/contact-banner";
 import ContactFormWithMap from "../components/sections/contact/contact-form-with-map";
 import ContactSocialBanner from "../components/sections/contact/contact-social-banner";
 import ContactFAQ from "../components/sections/contact/contact-faq";
+import NotFoundBanner from "../components/sections/not-found-banner";
 
 const NotFoundPage = () => {
   return (
     <MainLayout>
-      <ContactUsBanner />
-      <ContactFormWithMap />
-      <ContactFAQ />
-      <ContactSocialBanner />
+      <NotFoundBanner />
     </MainLayout>
   );
 };
