@@ -1,12 +1,11 @@
 import React from "react";
 import Title from "../common/title";
-import blogData from "../../data/blog-data";
 import Carousel from "../common/carousel";
 import { SwiperSlide } from "swiper/react";
 import AppButton from "../common/app-button";
 import BlogPreviewCard from "./blog-preview-card";
 
-const BlogCarousel = () => {
+const BlogCarousel = ({ blogPosts = [] }) => {
   return (
     <section className="pt-28">
       <div className="">
@@ -15,9 +14,9 @@ const BlogCarousel = () => {
         </Title>
         <div>
           <Carousel>
-            {blogData.map((post, index) => (
-              <SwiperSlide key={index}>
-                <BlogPreviewCard post={post} />
+            {blogPosts.map((post) => (
+              <SwiperSlide key={post.id}>
+                <BlogPreviewCard post={post.frontmatter} />
               </SwiperSlide>
             ))}
           </Carousel>
@@ -29,7 +28,9 @@ const BlogCarousel = () => {
             insights, or IT management best practices, our insightful blogs have
             you covered. Stay informed and empowered for success
           </p>
-          <AppButton variant="primary">Explore More Blogs</AppButton>
+          <AppButton as="link" href="/blog" variant="primary">
+            Explore More Blogs
+          </AppButton>
         </div>
       </div>
     </section>
