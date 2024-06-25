@@ -3,77 +3,32 @@ import React from "react";
 const GooglePlusIcon = ({ className = "" }) => {
   return (
     <svg
-      width="44"
-      height="45"
-      viewBox="0 0 44 45"
+      width="76"
+      height="76"
+      viewBox="0 0 76 76"
       fill="none"
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
-      <g filter="url(#filter0_d_1080_5834)">
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19"
-          fill="#000529"
-          fill-opacity="0.9"
-          shape-rendering="crispEdges"
-        />
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19.4"
-          stroke="url(#paint0_linear_1080_5834)"
-          stroke-width="0.8"
-          shape-rendering="crispEdges"
-        />
-      </g>
+      <circle
+        cx="38"
+        cy="38"
+        r="35.5"
+        fill="#000529"
+        fill-opacity="0.9"
+        stroke="url(#paint0_linear_1408_3409)"
+      />
       <path
-        d="M32.4286 20.2204L30.5714 20.2204L30.5714 18.3632L28.7143 18.3632L28.7143 20.2204L26.8571 20.2204L26.8571 22.0775L28.7143 22.0775L28.7143 23.9346L30.5714 23.9346L30.5714 22.0775L32.4286 22.0775M18.5 20.2204L18.5 22.4489L22.2143 22.4489C22.0286 23.3775 21.1 25.2346 18.5 25.2346C16.2714 25.2346 14.5071 23.3775 14.5071 21.1489C14.5071 18.9204 16.2714 17.0632 18.5 17.0632C19.8 17.0632 20.6357 17.6204 21.1 18.0846L22.8643 16.4132C21.75 15.2989 20.2643 14.6489 18.5 14.6489C14.8786 14.6489 12 17.5275 12 21.1489C12 24.7704 14.8786 27.6489 18.5 27.6489C22.2143 27.6489 24.7214 25.0489 24.7214 21.3346C24.7214 20.8704 24.7214 20.5918 24.6286 20.2204L18.5 20.2204Z"
+        d="M55.5714 36.4286H52.4286V33.2857H49.2857V36.4286H46.1429V39.5714H49.2857V42.7143H52.4286V39.5714H55.5714M32 36.4286V40.2H38.2857C37.9714 41.7714 36.4 44.9143 32 44.9143C28.2286 44.9143 25.2429 41.7714 25.2429 38C25.2429 34.2286 28.2286 31.0857 32 31.0857C34.2 31.0857 35.6143 32.0286 36.4 32.8143L39.3857 29.9857C37.5 28.1 34.9857 27 32 27C25.8714 27 21 31.8714 21 38C21 44.1286 25.8714 49 32 49C38.2857 49 42.5286 44.6 42.5286 38.3143C42.5286 37.5286 42.5286 37.0571 42.3714 36.4286H32Z"
         fill="#218FCC"
       />
       <defs>
-        <filter
-          id="filter0_d_1080_5834"
-          x="0.262024"
-          y="0.849121"
-          width="43.476"
-          height="43.476"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="1.93817" />
-          <feGaussianBlur stdDeviation="0.969086" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.0516031 0 0 0 0 0.018202 0 0 0 0 0.198568 0 0 0 0.4 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_1080_5834"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_1080_5834"
-            result="shape"
-          />
-        </filter>
         <linearGradient
-          id="paint0_linear_1080_5834"
-          x1="3"
-          y1="20.6489"
-          x2="41"
-          y2="20.6537"
+          id="paint0_linear_1408_3409"
+          x1="2"
+          y1="38"
+          x2="74"
+          y2="38.009"
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#9852C5" />

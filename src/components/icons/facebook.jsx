@@ -3,77 +3,32 @@ import React from "react";
 const FacebookIcon = ({ className = "" }) => {
   return (
     <svg
-      width="44"
-      height="45"
-      viewBox="0 0 44 45"
+      width="76"
+      height="76"
+      viewBox="0 0 76 76"
       fill="none"
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
-      <g filter="url(#filter0_d_1080_5832)">
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19"
-          fill="#000529"
-          fill-opacity="0.9"
-          shape-rendering="crispEdges"
-        />
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19.4"
-          stroke="url(#paint0_linear_1080_5832)"
-          stroke-width="0.8"
-          shape-rendering="crispEdges"
-        />
-      </g>
+      <circle
+        cx="38"
+        cy="38"
+        r="35.5"
+        fill="#000529"
+        fill-opacity="0.9"
+        stroke="url(#paint0_linear_1408_3407)"
+      />
       <path
-        d="M23.0819 28.6489L23.0819 21.3624L25.3987 21.3624L25.7431 18.5096L23.0819 18.5096L23.0819 16.6924C23.0819 15.8691 23.2981 15.3055 24.4117 15.3055L25.8227 15.3055L25.8227 12.762C25.1361 12.6839 24.4461 12.6462 23.7556 12.6491C21.7077 12.6491 20.3017 13.9755 20.3017 16.4106L20.3017 18.5042L18 18.5042L18 21.3571L20.3068 21.3571L20.3068 28.6489L23.0819 28.6489Z"
+        d="M39.6229 50L39.6229 39.0703L43.0981 39.0703L43.6146 34.7909L39.6229 34.7909L39.6229 32.0652C39.6229 30.8303 39.9471 29.9849 41.6175 29.9849L43.734 29.9849L43.734 26.1696C42.7042 26.0525 41.6691 25.9959 40.6334 26.0002C37.5616 26.0002 35.4526 27.9899 35.4526 31.6424L35.4526 34.7829L32 34.7829L32 39.0623L35.4601 39.0623L35.4601 50L39.6229 50Z"
         fill="#218FCC"
       />
       <defs>
-        <filter
-          id="filter0_d_1080_5832"
-          x="0.262024"
-          y="0.849121"
-          width="43.476"
-          height="43.476"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="1.93817" />
-          <feGaussianBlur stdDeviation="0.969086" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.0516031 0 0 0 0 0.018202 0 0 0 0 0.198568 0 0 0 0.4 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_1080_5832"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_1080_5832"
-            result="shape"
-          />
-        </filter>
         <linearGradient
-          id="paint0_linear_1080_5832"
-          x1="3"
-          y1="20.6489"
-          x2="41"
-          y2="20.6537"
+          id="paint0_linear_1408_3407"
+          x1="2"
+          y1="38"
+          x2="74"
+          y2="38.009"
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#9852C5" />

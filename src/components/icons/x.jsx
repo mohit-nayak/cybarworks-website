@@ -3,79 +3,33 @@ import React from "react";
 const XIcon = ({ className = "" }) => {
   return (
     <svg
-      width="44"
-      height="45"
-      viewBox="0 0 44 45"
+      width="76"
+      height="76"
+      viewBox="0 0 76 76"
       fill="none"
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
-      <g filter="url(#filter0_d_1080_5833)">
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19"
-          fill="#000529"
-          fill-opacity="0.9"
-          shape-rendering="crispEdges"
-        />
-        <circle
-          cx="22"
-          cy="20.6489"
-          r="19.4"
-          stroke="url(#paint0_linear_1080_5833)"
-          stroke-width="0.8"
-          shape-rendering="crispEdges"
-        />
-      </g>
+      <circle
+        cx="38"
+        cy="38"
+        r="35.5"
+        fill="#000529"
+        fill-opacity="0.9"
+        stroke="url(#paint0_linear_1408_3408)"
+      />
       <path
-        d="M22.9156 19.5772L27.866 13.6489L26.6928 13.6489L22.3934 18.796L18.9606 13.6489L15 13.6489L20.1926 21.4329L15 27.6489L16.1732 27.6489L20.7134 22.2134L24.3394 27.6489L28.3 27.6489L22.9156 19.5772ZM21.3084 21.5008L20.782 20.7259L16.596 14.5589L18.3985 14.5589L21.7767 19.5359L22.3024 20.3108L26.6935 26.7802L24.8917 26.7802L21.3084 21.5008Z"
+        d="M40.4388 36.3159L48.218 27H46.3744L39.6182 35.0883L34.2238 27H28L36.1598 39.232L28 49H29.8436L36.9782 40.4585L42.6762 49H48.9L40.4388 36.3159ZM37.9132 39.3387L37.086 38.121L30.508 28.43H33.3405L38.6491 36.251L39.4752 37.4687L46.3755 47.6349H43.5441L37.9132 39.3387Z"
         fill="#218FCC"
         stroke="#218FCC"
-        stroke-width="0.236045"
       />
       <defs>
-        <filter
-          id="filter0_d_1080_5833"
-          x="0.262024"
-          y="0.849121"
-          width="43.476"
-          height="43.476"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy="1.93817" />
-          <feGaussianBlur stdDeviation="0.969086" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.0516031 0 0 0 0 0.018202 0 0 0 0 0.198568 0 0 0 0.4 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_1080_5833"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_1080_5833"
-            result="shape"
-          />
-        </filter>
         <linearGradient
-          id="paint0_linear_1080_5833"
-          x1="3"
-          y1="20.6489"
-          x2="41"
-          y2="20.6537"
+          id="paint0_linear_1408_3408"
+          x1="2"
+          y1="38"
+          x2="74"
+          y2="38.009"
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#9852C5" />
