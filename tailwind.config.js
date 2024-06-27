@@ -36,7 +36,7 @@ module.exports = {
         "8xl": "85rem",
       },
       animation: {
-        "pulse-5s": "pulse 5s linear infinite",
+        "pulse-float-5s": "pulse 5s linear infinite, floating 5s infinite",
         "spin-pulse-2": "spin 120s linear infinite, pulse 8s linear infinite",
       },
       transitionTimingFunction: {

@@ -11,7 +11,7 @@ const HeroBanner2 = ({
   ctaOnClick = () => {},
   artifact1,
   artifact2,
-  artifactAnimation = "animate-pulse-5s",
+  artifactAnimation = "animate-pulse-float-5s",
 }) => {
   return (
     <section className="relative h-[920px] max-h-full overflow-hidden">
@@ -45,6 +45,7 @@ const HeroBanner2 = ({
             className={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[160px] lg:-top-[80px] ${artifactAnimation}`}
             width={180}
             height={180}
+            style={{ animationDelay: "1500ms" }}
           />
         )}
 

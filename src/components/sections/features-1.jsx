@@ -19,7 +19,7 @@ const Features1 = ({ mainImgSrc, mainImgAlt = "", data = [] }) => {
         <img
           src={mainImgSrc}
           alt={mainImgAlt}
-          className="h-full max-h-[420px] w-full max-w-[420px] animate-pulse-5s"
+          className="h-full max-h-[420px] w-full max-w-[420px] animate-pulse-float-5s"
         />
         <div className="mx-auto max-w-[220px] space-y-2">
           <h6 className="text-2xl text-secondary-dark">{data[2].title}</h6>

@@ -37,7 +37,7 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-1.png"
                 quality={100}
                 formats={["png"]}
-                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
+                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-float-5s"
                 layout="fullWidth"
                 width={460}
                 height={460}
@@ -71,7 +71,7 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-2.png"
                 quality={100}
                 formats={["png"]}
-                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
+                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-float-5s"
                 style={{ animationDelay: "1500ms" }}
                 layout="fullWidth"
                 width={460}
@@ -106,7 +106,7 @@ const HowWeHelp = () => {
                 src="../../assets/images/graphic-3.png"
                 quality={100}
                 formats={["png"]}
-                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-5s"
+                className="mx-auto h-full max-h-[460px] w-full max-w-[460px] animate-pulse-float-5s"
                 style={{ animationDelay: "3000ms" }}
                 layout="fullWidth"
                 width={460}
