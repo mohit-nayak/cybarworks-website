@@ -42,10 +42,10 @@ const footerData = {
     call: "(480) 948-8029",
   },
   socialLinks: {
-    facebook: "",
-    x: "",
-    googlePlus: "",
-    instagram: "",
+    facebook: "https://google.com",
+    x: "https://google.com",
+    googlePlus: "https://google.com",
+    instagram: "https://google.com",
   },
   copyright: "Copyright © 2024 — All Rights Reserved @CybarWorks, INC",
 };

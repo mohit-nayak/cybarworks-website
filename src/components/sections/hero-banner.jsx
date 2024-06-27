@@ -30,7 +30,9 @@ const HeroBanner = ({
           {description}
         </p>
         <div className="flex justify-center">
-          <AppButton onClick={ctaOnClick}>{ctaText}</AppButton>
+          <AppButton as="link" href="/contact">
+            {ctaText}
+          </AppButton>
         </div>
       </div>
     </section>

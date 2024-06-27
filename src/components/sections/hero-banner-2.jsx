@@ -54,7 +54,9 @@ const HeroBanner2 = ({
         </p>
         {cta && (
           <div className="flex justify-center">
-            <AppButton onClick={ctaOnClick}>{ctaText}</AppButton>
+            <AppButton as="link" href="/contact">
+              {ctaText}
+            </AppButton>
           </div>
         )}
       </div>

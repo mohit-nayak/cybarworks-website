@@ -23,7 +23,11 @@ const HowWeHelp = () => {
                   efficient, secure, and reliable operations, allowing you to
                   focus on your core business activities.
                 </p>
-                <AppButton childClassName="px-10 py-1.5 text-base">
+                <AppButton
+                  as="link"
+                  href="/services/it-services/"
+                  childClassName="px-10 py-1.5 text-base"
+                >
                   Know More
                 </AppButton>
               </div>
@@ -53,7 +57,11 @@ const HowWeHelp = () => {
                   and rapid response to keep your data and systems safe from
                   potential breaches and attacks.
                 </p>
-                <AppButton childClassName="px-10 py-1.5 text-base">
+                <AppButton
+                  as="link"
+                  href="/services/security-services/"
+                  childClassName="px-10 py-1.5 text-base"
+                >
                   Know More
                 </AppButton>
               </div>
@@ -84,7 +92,11 @@ const HowWeHelp = () => {
                   help you optimize your IT infrastructure, implement innovative
                   solutions, to stay ahead of the competition.
                 </p>
-                <AppButton childClassName="px-10 py-1.5 text-base">
+                <AppButton
+                  as="link"
+                  href="/services/consulting-services/"
+                  childClassName="px-10 py-1.5 text-base"
+                >
                   Know More
                 </AppButton>
               </div>

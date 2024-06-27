@@ -30,7 +30,9 @@ const WhoWeAre = ({ className = "" }) => {
                 focus on what you do best while we take care of your technology
                 needs.
               </p>
-              <AppButton>Connect With Us</AppButton>
+              <AppButton as="link" href="/contact">
+                Connect With Us
+              </AppButton>
             </div>
           </div>
           <div className="lg:grid-cols-1">

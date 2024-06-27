@@ -12,7 +12,7 @@ const BlogListWithCategories = ({ posts = [], activeCategory }) => {
     <section className="relative mx-auto max-w-7xl overflow-hidden pb-16">
       <div className="lg:grid lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-3">
-          <BlogCategories allTags={allTags} />
+          <BlogCategories allTags={allTags} activeCategory={activeCategory} />
         </div>
         <div className="lg:col-span-9">
           <BlogList posts={postsByActiveTag} activeCategory={activeCategory} />

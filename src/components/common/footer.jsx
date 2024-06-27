@@ -46,16 +46,16 @@ const Footer = () => {
               {footerData.tagline}
             </p>
             <div className="mx-auto mt-6 flex max-w-max items-center gap-4">
-              <Link to={footerData.socialLinks.facebook}>
+              <Link to={footerData.socialLinks.facebook} target="_blank">
                 <FacebookIcon className="aspect-square h-10 w-10" />
               </Link>
-              <Link to={footerData.socialLinks.x}>
+              <Link to={footerData.socialLinks.x} target="_blank">
                 <XIcon className="aspect-square h-10 w-10" />
               </Link>
-              <Link to={footerData.socialLinks.googlePlus}>
+              <Link to={footerData.socialLinks.googlePlus} target="_blank">
                 <GooglePlusIcon className="aspect-square h-10 w-10" />
               </Link>
-              <Link to={footerData.socialLinks.instagram}>
+              <Link to={footerData.socialLinks.instagram} target="_blank">
                 <InstagramIcon className="aspect-square h-10 w-10" />
               </Link>
             </div>

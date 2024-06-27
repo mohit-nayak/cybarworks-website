@@ -10,6 +10,7 @@ const Input = ({
   placeholder = "",
   value = undefined,
   childClassName = "",
+  required = false,
   onChange = () => {},
   rows,
 }) => {
@@ -20,6 +21,7 @@ const Input = ({
     defaultValue,
     autoFocus,
     placeholder,
+    required,
     onChange,
   };
 

@@ -39,9 +39,9 @@ const mainNavigationData = {
     },
   ],
   contact: {
-    location: "",
-    email: "",
-    call: "",
+    location: ["5440 S Lakeshore Drive, Suite 102", "Tempe, AZ 85283029"],
+    email: "info@cybarworks.com",
+    call: "(480) 948-8029",
   },
 };
 

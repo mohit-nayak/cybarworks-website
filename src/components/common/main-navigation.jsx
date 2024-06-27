@@ -116,10 +116,10 @@ const MainNavigation = () => {
           <Link to="/">
             <LocationIcon className="h-10 w-10" />
           </Link>
-          <Link to="/">
+          <Link to={`mailto:${mainNavigationData.contact.email}`}>
             <EmailIcon className="h-10 w-10" />
           </Link>
-          <Link to="/">
+          <Link to={`callto:${mainNavigationData.contact.call}`}>
             <CallIcon className="h-10 w-10" />
           </Link>
         </div>

@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 const AppButton = ({
   as = "button",
   href = "#",
+  type = "button",
   variant = "primary",
   onClick = () => {},
   className = "",
@@ -28,7 +29,7 @@ const AppButton = ({
     return (
       <Link
         to={href}
-        className={`block rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
+        className={`block w-max rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
       >
         <span
           className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
@@ -42,6 +43,7 @@ const AppButton = ({
       <button
         className={`rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
         onClick={onClick}
+        type={type}
       >
         <span
           className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}

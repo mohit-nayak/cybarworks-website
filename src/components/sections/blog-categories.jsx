@@ -2,12 +2,12 @@ import React from "react";
 import AppButton from "../common/app-button";
 import { tagNameToSlug } from "../../utils/tags";
 
-const BlogCategories = ({ allTags = [] }) => {
+const BlogCategories = ({ allTags = [], activeCategory }) => {
   return (
     <div className="flex flex-col justify-center gap-6 pr-10">
       <AppButton
         as="link"
-        variant="secondary"
+        variant={activeCategory ? "secondary" : "primary"}
         href={`/blog#posts`}
         childClassName="text-center max-w-xs"
       >
@@ -17,7 +17,9 @@ const BlogCategories = ({ allTags = [] }) => {
         <AppButton
           key={tag}
           as="link"
-          variant="secondary"
+          variant={
+            activeCategory === tagNameToSlug(tag) ? "primary" : "secondary"
+          }
           href={`/blog?category=${tagNameToSlug(tag)}#posts`}
           childClassName="text-center max-w-xs"
         >

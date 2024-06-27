@@ -20,6 +20,7 @@ const SupportOptions = () => {
                     assistance. Rest assured, our team will track and manage your IT
                     issues until resolved, minimizing disruptions."
                 actionBtnText="Get Support Ticket"
+                actionBtnHref="https://cybarworks.sherpadesk.com/widget?class=45811"
                 mainIcon={{ IconEle: SupportTicketIcon }}
               />
             </div>
@@ -29,6 +30,7 @@ const SupportOptions = () => {
                 description="Get instant assistance from our IT specialists through secure remote sessions. 
                 Resolve technical issues efficiently without in-person visits. Experience tailored troubleshooting."
                 actionBtnText="Get Support Ticket"
+                actionBtnHref="https://www.beyondtrust.com/"
                 mainIcon={{ IconEle: RemoteSupportIcon }}
               />
             </div>
