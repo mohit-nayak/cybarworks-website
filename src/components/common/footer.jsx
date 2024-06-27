@@ -126,7 +126,7 @@ const Footer = () => {
             </p>
             <AppButton
               variant="primary"
-              childClassName="px-8 py-2 text-xs font-light"
+              childClassName="px-8 py-2 text-sm font-light"
               onClick={handleScrollToTop}
             >
               Back to top

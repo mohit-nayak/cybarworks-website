@@ -32,7 +32,7 @@ const AppButton = ({
         className={`block w-max rounded-full p-[1px] font-semibold ${bgGradient} ${className}`}
       >
         <span
-          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
+          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark transition-colors duration-100 hover:text-tertiary-dark ${childClassName}`}
         >
           {children}
         </span>
@@ -46,7 +46,7 @@ const AppButton = ({
         type={type}
       >
         <span
-          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark ${childClassName}`}
+          className={`relative flex w-full flex-col rounded-full bg-primary-dark px-12 py-3 text-lg font-light text-secondary-dark transition-colors duration-100 hover:text-tertiary-dark ${childClassName}`}
         >
           {children}
         </span>
