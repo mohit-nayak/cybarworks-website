@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../common/title";
 import Features1 from "../features-1";
-import mainImg from "../../../assets/images/shield-2.png";
+import mainImg from "../../../assets/images/growth-2.png";
 
 const whyUsData = [
   {
