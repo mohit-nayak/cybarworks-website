@@ -18,7 +18,7 @@ const Carousel = ({ children }) => {
         </button>
       </div>
       <Swiper
-        spaceBetween={40}
+        spaceBetween={35}
         slidesPerView={4}
         loop={true}
         centeredSlides

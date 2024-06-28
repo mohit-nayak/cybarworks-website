@@ -9,6 +9,7 @@ const BlogCategories = ({ allTags = [], activeCategory }) => {
         as="link"
         variant={activeCategory ? "secondary" : "primary"}
         href={`/blog#posts`}
+        className="!w-full"
         childClassName="text-center max-w-xs"
       >
         All Blogs
@@ -21,6 +22,7 @@ const BlogCategories = ({ allTags = [], activeCategory }) => {
             activeCategory === tagNameToSlug(tag) ? "primary" : "secondary"
           }
           href={`/blog?category=${tagNameToSlug(tag)}#posts`}
+          className="!w-full"
           childClassName="text-center max-w-xs"
         >
           {tag}

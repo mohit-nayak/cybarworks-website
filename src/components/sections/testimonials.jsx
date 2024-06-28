@@ -37,7 +37,7 @@ const Testimonials = ({
                       alt="shadow"
                     />
                   </div>
-                  <div className="min-h-[480px] bg-secondary-gradient-light px-10 py-8">
+                  <div className="min-h-[450px] bg-secondary-gradient-light px-6 xl:px-10 py-8">
                     <div className="text-2xl">{testimonial.name}</div>
                     <div className="mb-3 text-base">{`${testimonial.position}, ${testimonial.company}`}</div>
                     <div className="mb-6 flex gap-x-2">
