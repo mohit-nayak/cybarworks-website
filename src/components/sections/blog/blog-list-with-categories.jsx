@@ -9,7 +9,7 @@ const BlogListWithCategories = ({ posts = [], activeCategory }) => {
   const postsByActiveTag = getPostsByTag(posts, activeCategory);
 
   return (
-    <section className="relative mx-auto max-w-6xl overflow-hidden pb-16 xl:max-w-7xl">
+    <section className="relative mx-auto max-w-6xl overflow-hidden pb-16 2xl:max-w-7xl">
       <div className="lg:grid lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-3">
           <BlogCategories allTags={allTags} activeCategory={activeCategory} />
