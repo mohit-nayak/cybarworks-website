@@ -5,19 +5,19 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const HowWeHelp = () => {
   return (
-    <section className="py-16">
-      <div className="mx-auto max-w-6xl">
-        <Title variant="secondary" className="mb-10">
+    <section className="py-6 md:py-16">
+      <div className="mx-auto max-w-6xl px-6">
+        <Title variant="secondary" className="px-6 md:mb-10 md:px-0">
           How we help businesses with IT?
         </Title>
         <div>
-          <div className="items-center lg:grid lg:grid-cols-2">
-            <div className="lg:grid-cols-1">
-              <div className="max-w-md space-y-7">
-                <h4 className="text-3xl font-light text-secondary-dark">
+          <div className="grid grid-cols-1 items-center md:grid-cols-2">
+            <div className="order-2 md:order-1 lg:grid-cols-1">
+              <div className="mx-auto max-w-md space-y-4 lg:space-y-7">
+                <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Managed IT Services
                 </h4>
-                <p className="font-light text-secondary-dark">
+                <p className="text-center font-light text-secondary-dark lg:text-left">
                   Keep your IT systems running smoothly with our comprehensive
                   support and maintenance solutions. Our team of experts ensures
                   efficient, secure, and reliable operations, allowing you to
@@ -26,13 +26,14 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/it-services/"
+                  className="mx-auto"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More
                 </AppButton>
               </div>
             </div>
-            <div className="lg:grid-cols-1">
+            <div className="order-1 md:order-2 lg:grid-cols-1">
               <StaticImage
                 src="../../assets/images/graphic-1.png"
                 quality={100}
@@ -45,13 +46,13 @@ const HowWeHelp = () => {
               />
             </div>
           </div>
-          <div className="items-center lg:grid lg:grid-cols-2">
-            <div className="lg:order-2 lg:grid-cols-1">
-              <div className="ml-auto max-w-md space-y-7">
-                <h4 className="text-3xl font-light text-secondary-dark">
+          <div className="grid grid-cols-1 items-center md:grid-cols-2">
+            <div className="order-2 md:order-1 lg:grid-cols-1">
+              <div className="mx-auto ml-auto max-w-md space-y-4 lg:space-y-7">
+                <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Security Services
                 </h4>
-                <p className="font-light text-secondary-dark">
+                <p className="text-center font-light text-secondary-dark lg:text-left">
                   Protect your business from cyber threats with our robust
                   security solutions. We offer thorough assessments, monitoring,
                   and rapid response to keep your data and systems safe from
@@ -60,13 +61,14 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/security-services/"
+                  className="mx-auto"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More
                 </AppButton>
               </div>
             </div>
-            <div className="lg:order-1 lg:grid-cols-1">
+            <div className="order-1 md:order-2 lg:grid-cols-1">
               <StaticImage
                 src="../../assets/images/graphic-2.png"
                 quality={100}
@@ -80,13 +82,13 @@ const HowWeHelp = () => {
               />
             </div>
           </div>
-          <div className="items-center lg:grid lg:grid-cols-2">
-            <div className="lg:grid-cols-1">
-              <div className="max-w-md space-y-7">
-                <h4 className="text-3xl font-light text-secondary-dark">
+          <div className="grid grid-cols-1 items-center md:grid-cols-2">
+            <div className="order-2 md:order-1 lg:grid-cols-1">
+              <div className="mx-auto max-w-md space-y-4 lg:space-y-7">
+                <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Consulting
                 </h4>
-                <p className="font-light text-secondary-dark">
+                <p className="text-center font-light text-secondary-dark lg:text-left">
                   Get strategic guidance and expert advice on leveraging
                   technology to drive business growth. Our consulting services
                   help you optimize your IT infrastructure, implement innovative
@@ -95,13 +97,14 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/consulting-services/"
+                  className="mx-auto"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More
                 </AppButton>
               </div>
             </div>
-            <div className="lg:grid-cols-1">
+            <div className="order-1 md:order-2 lg:grid-cols-1">
               <StaticImage
                 src="../../assets/images/graphic-3.png"
                 quality={100}

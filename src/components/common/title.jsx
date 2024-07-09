@@ -13,19 +13,19 @@ const Title = ({
     case "primary":
       as = as ?? "h1";
       variantClassNames =
-        "max-w-2xl mx-auto text-title-primary-sm lg:text-title-primary-lg";
+        "max-w-xl md:max-w-2xl mx-auto text-title-primary-sm md:text-title-primary-md lg:text-title-primary-lg";
       break;
 
     case "secondary":
       as = as ?? "h2";
       variantClassNames =
-        "max-w-xl mx-auto text-title-secondary-sm lg:text-title-secondary-lg";
+        "max-w-xl md:max-w-xl mx-auto text-title-secondary-sm md:text-title-secondary-md lg:text-title-secondary-lg";
       break;
 
     default:
       as = as ?? "h2";
       variantClassNames =
-        "max-w-xl mx-auto text-title-secondary-sm lg:text-title-secondary-lg";
+        "max-w-xl md:max-w-xl mx-auto text-title-secondary-sm md:text-title-secondary-md lg:text-title-secondary-lg";
   }
 
   // Return a valid title HTML element.

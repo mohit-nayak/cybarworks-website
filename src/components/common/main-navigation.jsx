@@ -26,7 +26,7 @@ function classNames(...classes) {
 
 const MainNavigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { scrolled } = useWindowPos({ target: 100 });
+  const { scrolled } = useWindowPos({ target: 75 });
 
   return (
     <header className={`fixed top-0 z-20 w-full`}>

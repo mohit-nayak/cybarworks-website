@@ -1,11 +1,25 @@
 import { graphql } from "gatsby";
 
 export default graphql`
-	query HomePageQuery {
-		file(relativePath: { eq: "hero-banner-bg.png" }) {
-			childImageSharp {
-				gatsbyImageData(layout: CONSTRAINED)
-			}
-		}
-	}
+  query MyQuery {
+    allMdx(limit: 10) {
+      nodes {
+        id
+        frontmatter {
+          title
+          slug
+          pubDate
+          tags
+          banner {
+            filename {
+              childImageSharp {
+                gatsbyImageData(width: 800)
+              }
+            }
+            alt
+          }
+        }
+      }
+    }
+  }
 `;

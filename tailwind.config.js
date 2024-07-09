@@ -28,9 +28,11 @@ module.exports = {
       },
       fontSize: {
         "title-primary-lg": ["64px", "72px"],
-        "title-primary-sm": ["38px", "44px"],
+        "title-primary-md": ["52px", "60px"],
+        "title-primary-sm": ["40px", "46px"],
         "title-secondary-lg": ["56px", "67px"],
-        "title-secondary-sm": ["32px", "38px"],
+        "title-secondary-md": ["42px", "48px"],
+        "title-secondary-sm": ["36px", "42px"],
       },
       maxWidth: {
         "8xl": "85rem",
