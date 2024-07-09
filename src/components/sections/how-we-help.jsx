@@ -13,7 +13,7 @@ const HowWeHelp = () => {
         <div>
           <div className="grid grid-cols-1 items-center md:grid-cols-2">
             <div className="order-2 md:order-1 lg:grid-cols-1">
-              <div className="mx-auto max-w-md space-y-4 lg:space-y-7">
+              <div className="mx-auto max-w-md space-y-4 md:mx-0 lg:space-y-7">
                 <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Managed IT Services
                 </h4>
@@ -26,7 +26,7 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/it-services/"
-                  className="mx-auto"
+                  className="mx-auto md:mx-0"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More
@@ -47,8 +47,8 @@ const HowWeHelp = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 items-center md:grid-cols-2">
-            <div className="order-2 md:order-1 lg:grid-cols-1">
-              <div className="mx-auto ml-auto max-w-md space-y-4 lg:space-y-7">
+            <div className="order-1 md:order-2 lg:grid-cols-1">
+            <div className="mx-auto md:ml-auto max-w-md space-y-4 lg:space-y-7">
                 <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Security Services
                 </h4>
@@ -61,14 +61,14 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/security-services/"
-                  className="mx-auto"
+                  className="mx-auto md:mx-0"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More
                 </AppButton>
               </div>
             </div>
-            <div className="order-1 md:order-2 lg:grid-cols-1">
+            <div className="order-2 md:order-1 lg:grid-cols-1">
               <StaticImage
                 src="../../assets/images/graphic-2.png"
                 quality={100}
@@ -84,7 +84,7 @@ const HowWeHelp = () => {
           </div>
           <div className="grid grid-cols-1 items-center md:grid-cols-2">
             <div className="order-2 md:order-1 lg:grid-cols-1">
-              <div className="mx-auto max-w-md space-y-4 lg:space-y-7">
+              <div className="mx-auto max-w-md space-y-4 md:mx-0 lg:space-y-7">
                 <h4 className="text-center text-2xl font-light text-secondary-dark md:text-3xl lg:text-left">
                   Consulting
                 </h4>
@@ -97,7 +97,7 @@ const HowWeHelp = () => {
                 <AppButton
                   as="link"
                   href="/services/consulting-services/"
-                  className="mx-auto"
+                  className="mx-auto md:mx-0"
                   childClassName="px-10 py-1.5 text-base"
                 >
                   Know More

@@ -18,11 +18,11 @@ const HomePage = ({ data }) => {
       <HomepageHeroBanner />
       <HowWeHelp />
       <WhoWeAre />
-      {/* <HomepageWhyChooseUs /> */}
-      {/* <HomepageMetrics /> */}
-      {/* <HomepageTestimonials /> */}
-      {/* <BlogCarousel blogPosts={blogPosts} /> */}
-      {/* <HomepageCta /> */}
+      <HomepageWhyChooseUs />
+      <HomepageMetrics />
+      <HomepageTestimonials />
+      <BlogCarousel blogPosts={blogPosts} />
+      <HomepageCta />
     </MainLayout>
   );
 };
