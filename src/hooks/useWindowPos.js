@@ -6,6 +6,8 @@ const useWindowPos = ({ target }) => {
   const handlePageScroll = () => setScrolled(window.scrollY >= target);
 
   useEffect(() => {
+    handlePageScroll();
+
     window.addEventListener("scroll", handlePageScroll);
     return () => {
       window.removeEventListener("scroll", handlePageScroll);

@@ -5,8 +5,8 @@ import AppButton from "../common/app-button";
 
 const CtaBanner = ({ title = "", ctaText = "Contact Us Now" }) => {
   return (
-    <section className="relative flex h-[1174px] max-h-full items-center justify-center overflow-hidden">
-      <div className="absolute top-0 h-full w-full">
+    <section className="relative flex h-[620px] max-h-full items-center justify-center overflow-hidden md:h-[1174px]">
+      <div className="absolute top-0 hidden h-full w-full md:block">
         <StaticImage
           src="../../assets/images/cta-banner-bg.png"
           formats={["png"]}
@@ -18,7 +18,19 @@ const CtaBanner = ({ title = "", ctaText = "Contact Us Now" }) => {
           alt="bg"
         />
       </div>
-      <div className="relative mx-auto max-w-3xl space-y-8 p-6 lg:px-8">
+      <div className="absolute top-0 h-full w-full md:hidden">
+        <StaticImage
+          src="../../assets/images/cta-banner-bg-mobile.png"
+          formats={["png"]}
+          className="h-full w-full"
+          layout="fullWidth"
+          width={480}
+          height={620}
+          quality={100}
+          alt="bg"
+        />
+      </div>
+      <div className="relative -top-20 mx-auto max-w-3xl space-y-8 p-6 md:top-0 lg:px-8">
         <Title variant="primary">{title}</Title>
         <div className="flex justify-center">
           <AppButton as="link" href="/contact">

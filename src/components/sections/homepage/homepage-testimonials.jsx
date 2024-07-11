@@ -5,7 +5,7 @@ const HomepageTestimonials = () => {
   return (
     <Testimonials
       title="How have we helped other businesses?"
-      className="pb-28 pt-44"
+      className="pb-28 pt-28 md:pt-44"
     />
   );
 };
