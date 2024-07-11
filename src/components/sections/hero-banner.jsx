@@ -34,7 +34,7 @@ const HeroBanner = ({
         />
       </div>
 
-      <div className="max-w-xl relative mx-auto mt-32 space-y-8 px-8 py-6 md:mt-40 lg:max-w-3xl lg:px-8">
+      <div className="max-w-xl relative mx-auto mt-28 space-y-8 px-8 py-6 md:mt-40 lg:max-w-3xl lg:px-8">
         <Title variant="primary">{title}</Title>
         <p className="mx-auto max-w-xl text-center text-xl font-light text-secondary-dark">
           {description}

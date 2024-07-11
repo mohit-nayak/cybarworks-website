@@ -28,7 +28,7 @@ const BlogCarousel = ({ blogPosts = [] }) => {
           </Carousel>
         </div>
 
-        <div className="flex flex-col items-center space-y-7">
+        <div className="flex flex-col items-center px-8 space-y-7">
           <p className="mt-8 max-w-[440px] text-center md:mt-16">
             Whether you're seeking cybersecurity strategies, cloud computing
             insights, or IT management best practices, our insightful blogs have
