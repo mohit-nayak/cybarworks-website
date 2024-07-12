@@ -14,7 +14,7 @@ const PostBanner = ({
   const bannerImg = getImage(bannerImgData.image);
 
   return (
-    <section className="relative max-h-full min-h-[920px] overflow-hidden">
+    <section className="relative max-h-full md:min-h-[920px] overflow-hidden">
       <div className="absolute top-0 h-full w-full">
         <StaticImage
           src="../../../assets/images/services-hero-bg.png"
@@ -28,7 +28,7 @@ const PostBanner = ({
         />
       </div>
 
-      <div className="relative mx-auto mt-40 max-w-3xl p-6 lg:px-8">
+      <div className="relative mx-auto mt-28 md:mt-40 max-w-3xl p-6 lg:px-8">
         <AppButton
           as="link"
           href="/blog#posts"

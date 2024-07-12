@@ -6,13 +6,13 @@ import RemoteSupportIcon from "../../icons/remote-support";
 
 const SupportOptions = () => {
   return (
-    <section className="pb-10">
+    <section className="px-8 pb-10 pt-20 md:pt-0">
       <div className="mx-auto max-w-6xl">
-        <Title variant="secondary" className="mb-28">
+        <Title variant="secondary" className="mb-10 md:mb-16 lg:mb-28">
           Get our support just the way you want
         </Title>
         <div className="mx-auto max-w-4xl">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-20">
+          <div className="grid grid-cols-1 gap-10 md:gap-6 md:grid-cols-2 items-stretch lg:gap-20">
             <div className="lg:col-span-1">
               <SupportCard
                 title="Open Support Ticket"

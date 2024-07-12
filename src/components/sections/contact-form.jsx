@@ -10,7 +10,7 @@ const ContactForm = ({ title = "" }) => {
 
   return (
     <div>
-      <div className="mb-14 bg-secondary-gradient-semi-dark bg-clip-text text-2xl font-extralight italic text-transparent">
+      <div className="mb-6 mb:mb-14 bg-secondary-gradient-semi-dark bg-clip-text text-2xl font-extralight italic text-transparent">
         "{title}"
       </div>
       <form onSubmit={handleSubmit} className="space-y-7">

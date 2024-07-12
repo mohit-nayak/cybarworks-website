@@ -30,7 +30,7 @@ const CtaBanner = ({ title = "", ctaText = "Contact Us Now" }) => {
           alt="bg"
         />
       </div>
-      <div className="relative -top-24 mx-auto max-w-3xl space-y-8 p-6 lg:top-0 lg:px-8">
+      <div className="relative -top-24 mx-auto max-w-3xl space-y-8 p-6 md:top-0 lg:px-8">
         <Title variant="primary">{title}</Title>
         <div className="flex justify-center">
           <AppButton as="link" href="/contact">

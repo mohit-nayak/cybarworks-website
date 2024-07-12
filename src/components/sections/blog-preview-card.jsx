@@ -23,11 +23,11 @@ const BlogPreviewCard = ({ post }) => {
             alt="shadow"
           />
         </div>
-        <div className="relative flex min-h-[465px] flex-col bg-secondary-gradient-light">
+        <div className="relative flex min-h-[400px] flex-col bg-secondary-gradient-light md:min-h-[465px]">
           <GatsbyImage
             image={bannerImg}
             alt={post?.banner?.alt}
-            className="h-[200px] w-full object-cover"
+            className="h-[180px] w-full object-cover md:h-[200px]"
             width={360}
             height={200}
           />

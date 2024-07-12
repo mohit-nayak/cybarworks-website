@@ -29,7 +29,7 @@ const ContactFAQ = () => {
     <AccordionContent
       title="Got questions? Find answers here"
       data={faqData}
-      className="pt-28"
+      className="pb-10 md:pb-0 lg:pt-28"
     />
   );
 };

@@ -179,13 +179,16 @@ const MainNavigation = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="relative mt-6 flex h-full flex-1 flex-col justify-between px-6 pb-6 sm:px-6">
+                      <div className="relative mt-6 flex h-full flex-1 flex-col justify-between px-6 sm:px-6">
                         {/* Content goes here */}
-                        <div className="flex flex-col gap-6">
+                        <div className="mb-8 flex flex-col gap-6">
                           {mainNavigationData.navLinks.map((navItem, index) => (
                             <Fragment key={index}>
                               {navItem.children ? (
-                                <Disclosure as="div" className="relative w-max rounded-2xl bg-primary-dark">
+                                <Disclosure
+                                  as="div"
+                                  className="relative w-max rounded-2xl bg-primary-dark"
+                                >
                                   <DisclosureButton className="flex items-center gap-x-1 text-2xl font-light leading-6 text-secondary-dark outline-0 transition-colors hover:text-tertiary-dark">
                                     {navItem.name}
                                     <ChevronDownIcon
@@ -228,7 +231,7 @@ const MainNavigation = () => {
                               ) : (
                                 <Link
                                   to={navItem.url}
-                                  className="text-2xl w-max font-light leading-6 text-secondary-dark transition-colors hover:text-tertiary-dark"
+                                  className="w-max text-2xl font-light leading-6 text-secondary-dark transition-colors hover:text-tertiary-dark"
                                 >
                                   {navItem.name}
                                 </Link>
@@ -236,7 +239,7 @@ const MainNavigation = () => {
                             </Fragment>
                           ))}
                         </div>
-                        <div className="mt-auto flex flex-col gap-2 lg:justify-end">
+                        <div className="mt-auto flex flex-col gap-2 pb-6 lg:justify-end">
                           <Link to="/" className="flex items-center gap-1">
                             <LocationIcon className="h-10 w-10" />
                             <span className="text-base">

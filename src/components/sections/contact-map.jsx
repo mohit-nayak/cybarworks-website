@@ -11,7 +11,7 @@ const ContactMap = () => {
         src="https://www.joomtut.com/images/extensions/plugin-jt-contact-maps/plugin-jt-contact-maps-your-image.png"
         width={350}
         height={350}
-        className="aspect-square h-full max-h-[350px] w-full object-cover"
+        className="aspect-square h-full max-h-[350px] w-full rounded-lg object-cover lg:rounded-none"
         alt="Google maps"
       />
       <div className="mt-10 space-y-4 px-4">

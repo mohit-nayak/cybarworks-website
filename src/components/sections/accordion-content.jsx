@@ -10,21 +10,23 @@ import ArrowRightCircle from "../icons/arrow-right-circle";
 
 const AccordionContent = ({ title = "", data = [], className = "" }) => {
   return (
-    <section className={`mx-auto max-w-6xl ${className}`}>
+    <section className={`mx-auto max-w-6xl px-8 ${className}`}>
       {title && (
-        <Title variant="secondary" className="mb-24">
+        <Title variant="secondary" className="mb-10 lg:mb-24">
           {title}
         </Title>
       )}
-      <div className="space-y-10">
+      <div className="space-y-6 md:space-y-10">
         {data.map((entry, index) => (
           <Disclosure key={index} as="div">
             {({ open }) => (
               <div
                 className={`mx-auto max-w-4xl overflow-hidden rounded-2xl p-[1px] ${open ? "bg-primary-gradient" : "bg-secondary-gradient"}`}
               >
-                <div className="relative w-full rounded-2xl bg-primary-dark p-10">
-                  <DisclosureButton className="flex w-full items-center justify-between text-left text-xl font-light text-secondary-dark hover:text-secondary-semi-dark">
+                <div className="relative w-full rounded-2xl bg-primary-dark p-4 md:p-10">
+                  <DisclosureButton
+                    className={`flex w-full items-center justify-between text-left text-base font-light transition-colors duration-200 hover:text-secondary-semi-dark md:text-xl ${open ? "text-tertiary-dark hover:text-tertiary-dark" : "text-secondary-dark"}`}
+                  >
                     <div className="absolute inset-0 bg-secondary-gradient-light" />
                     {entry.title}
                     <ArrowRightCircle
@@ -40,7 +42,7 @@ const AccordionContent = ({ title = "", data = [], className = "" }) => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 -translate-y-6"
                     >
-                      <DisclosurePanel className="max-w-3xl origin-top pt-3 text-lg font-light text-secondary-dark transition">
+                      <DisclosurePanel className="max-w-3xl origin-top pt-3 text-base font-light text-secondary-dark transition md:text-lg">
                         {entry.description}
                       </DisclosurePanel>
                     </Transition>

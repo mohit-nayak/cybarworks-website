@@ -24,9 +24,9 @@ const BlogList = ({ posts = [], activeCategory }) => {
 
   return (
     <section className="space-y-10">
-      <div className="gap-8 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+      <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
         {visiblePosts.map((post) => (
-          <div key={post.id} className="lg:col-span-1">
+          <div key={post.id} className="col-span-1">
             <BlogPreviewCard post={post.frontmatter} />
           </div>
         ))}

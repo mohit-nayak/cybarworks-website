@@ -25,7 +25,7 @@ export default function PageTemplate({ data, children }) {
         bannerImgData={bannerImgData}
       />
       <MDXProvider components={shortcodes}>
-        <div className="blog-post mx-auto mt-6 max-w-3xl p-6 lg:px-8">
+        <div className="blog-post mx-auto md:mt-6 max-w-3xl p-6 lg:px-8">
           {children}
         </div>
       </MDXProvider>
