@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative flex pt-10 md:pt-0 max-h-full min-h-[435px] flex-col overflow-hidden">
+    <footer className="relative flex max-h-full min-h-[435px] flex-col overflow-hidden pt-10 md:pt-0">
       <div className="absolute top-0 hidden h-full w-full md:block">
         <StaticImage
           src="../../assets/images/footer-bg.png"
@@ -120,18 +120,24 @@ const Footer = () => {
                 <EmailIcon className="aspect-square h-5 w-5 fill-secondary-semi-light group-hover:fill-tertiary-dark" />
                 {footerData.contact.email}
               </Link>
-              <div className="flex items-center gap-3 font-light text-secondary-semi-light">
-                <LocationIcon className="aspect-square h-5 w-5 fill-secondary-semi-light" />
+              <Link
+                to={footerData.contact.location.googleMapLink}
+                target="_blank"
+                className="group flex items-center gap-3 font-light text-secondary-semi-light hover:text-tertiary-dark"
+              >
+                <LocationIcon className="aspect-square h-5 w-5 fill-secondary-semi-light group-hover:fill-tertiary-dark" />
                 <div>
-                  {footerData.contact.location.map((locationPart, index) => (
-                    <div key={index}>{locationPart}</div>
-                  ))}
+                  {footerData.contact.location.address.map(
+                    (locationPart, index) => (
+                      <div key={index}>{locationPart}</div>
+                    ),
+                  )}
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="mt-12 md:mt-16 px-0 md:px-8">
+        <div className="mt-12 px-0 md:mt-16 md:px-8">
           <div className="flex flex-col items-center justify-between gap-10 md:flex-row-reverse md:gap-0">
             <AppButton
               variant="primary"

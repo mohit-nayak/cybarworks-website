@@ -12,7 +12,7 @@ const SupportOptions = () => {
           Get our support just the way you want
         </Title>
         <div className="mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 gap-10 md:gap-6 md:grid-cols-2 items-stretch lg:gap-20">
+          <div className="grid grid-cols-1 items-stretch gap-10 md:grid-cols-2 md:gap-6 lg:gap-20">
             <div className="lg:col-span-1">
               <SupportCard
                 title="Open Support Ticket"
@@ -29,8 +29,8 @@ const SupportOptions = () => {
                 title="BeyondTrust Remote Support"
                 description="Get instant assistance from our IT specialists through secure remote sessions. 
                 Resolve technical issues efficiently without in-person visits. Experience tailored troubleshooting."
-                actionBtnText="Get Support Ticket"
-                actionBtnHref="https://www.beyondtrust.com/"
+                actionBtnText="Start Remote Session"
+                actionBtnHref="https://support.cybarworks.com"
                 mainIcon={{ IconEle: RemoteSupportIcon }}
               />
             </div>

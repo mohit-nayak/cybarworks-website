@@ -7,12 +7,15 @@ import CallIcon from "../icons/telephone";
 const ContactMap = () => {
   return (
     <div>
-      <img
-        src="https://www.joomtut.com/images/extensions/plugin-jt-contact-maps/plugin-jt-contact-maps-your-image.png"
-        width={350}
-        height={350}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3331.847178128184!2d-111.92260272390983!3d33.37505557341948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDIyJzMwLjIiTiAxMTHCsDU1JzEyLjEiVw!5e0!3m2!1sen!2sin!4v1720802551389!5m2!1sen!2sin"
+        width="350"
+        height="350"
+        title="map location"
+        allowfullscreen=""
+        loading="lazy"
         className="aspect-square h-full max-h-[350px] w-full rounded-lg object-cover lg:rounded-none"
-        alt="Google maps"
+        referrerpolicy="no-referrer-when-downgrade"
       />
       <div className="mt-10 space-y-4 px-4">
         <Link

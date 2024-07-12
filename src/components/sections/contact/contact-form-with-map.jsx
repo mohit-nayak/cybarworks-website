@@ -12,7 +12,7 @@ const ContactFormWithMap = () => {
 
       <div className="overflow-hidden p-[1px] md:rounded-3xl md:bg-primary-gradient">
         <div className="grid grid-cols-1 rounded-3xl bg-primary-dark md:grid-cols-2">
-          <div className="px-8 pb-8 md:py-8 lg:col-span-1 lg:px-12 lg:py-16">
+          <div className="px-8 md:py-8 md:!pb-2 lg:col-span-1 lg:px-12 lg:py-16">
             <ContactForm title="Reach out to us and get immediate response from our IT experts." />
           </div>
           <div className="bg-secondary-gradient-light px-4 py-6 md:px-6 lg:col-span-1">

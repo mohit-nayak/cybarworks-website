@@ -53,4 +53,4 @@ export const query = graphql`
 
 export default HomePage;
 
-export const Head = () => <title>Cyber Works</title>;
+export const Head = () => <title>CybarWorks</title>;

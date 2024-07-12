@@ -46,3 +46,5 @@ export const query = graphql`
 `;
 
 export default BlogPage;
+
+export const Head = () => <title>Blog - CybarWorks</title>;

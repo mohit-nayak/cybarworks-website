@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `cyber-works`,
+    title: `CybarWorks`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -13,6 +13,29 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `CybarWorks`,
+        short_name: `cybarworks`,
+        start_url: `/`,
+        background_color: `#000529`,
+        theme_color: `#000529`,
+        display: `standalone`,
+        icon: "./src/assets/images/favicon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-RC6D3FD8DQ", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-mdx",
       options: {

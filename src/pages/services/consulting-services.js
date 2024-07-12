@@ -24,4 +24,4 @@ const ConsultingServicesPage = () => {
 
 export default ConsultingServicesPage;
 
-export const Head = () => <title>Cyber Works - Consulting Services</title>;
+export const Head = () => <title>Consulting Services - CybarWorks</title>;

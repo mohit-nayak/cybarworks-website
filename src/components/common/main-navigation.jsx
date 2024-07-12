@@ -110,7 +110,7 @@ const MainNavigation = () => {
           ))}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-6">
-          <Link to="/">
+          <Link to={mainNavigationData.contact.location.googleMapLink} target="_blank">
             <LocationIcon className="h-10 w-10" />
           </Link>
           <Link to={`mailto:${mainNavigationData.contact.email}`}>
@@ -240,11 +240,20 @@ const MainNavigation = () => {
                           ))}
                         </div>
                         <div className="mt-auto flex flex-col gap-2 pb-6 lg:justify-end">
-                          <Link to="/" className="flex items-center gap-1">
+                          <Link
+                            to={
+                              mainNavigationData.contact.location.googleMapLink
+                            }
+                            className="flex items-center gap-1"
+                          >
                             <LocationIcon className="h-10 w-10" />
-                            <span className="text-base">
-                              {mainNavigationData.contact.location[0]}
-                            </span>
+                            <div className="text-base">
+                              {mainNavigationData.contact.location.address.map(
+                                (locationPart, index) => (
+                                  <div key={index}>{locationPart}</div>
+                                ),
+                              )}
+                            </div>
                           </Link>
                           <Link
                             to={`mailto:${mainNavigationData.contact.email}`}

@@ -15,3 +15,5 @@ const SupportPage = () => {
 };
 
 export default SupportPage;
+
+export const Head = () => <title>Support - CybarWorks</title>;
