@@ -44,14 +44,17 @@ const MainNavigation = () => {
             />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
+          <Link to={`callto:${mainNavigationData.contact.call}`}>
+            <CallIcon className="h-8 w-8" />
+          </Link>
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-secondary-dark hover:text-secondary-semi-light"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-8 w-8" aria-hidden="true" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-9">
@@ -110,7 +113,10 @@ const MainNavigation = () => {
           ))}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-6">
-          <Link to={mainNavigationData.contact.location.googleMapLink} target="_blank">
+          <Link
+            to={mainNavigationData.contact.location.googleMapLink}
+            target="_blank"
+          >
             <LocationIcon className="h-10 w-10" />
           </Link>
           <Link to={`mailto:${mainNavigationData.contact.email}`}>
