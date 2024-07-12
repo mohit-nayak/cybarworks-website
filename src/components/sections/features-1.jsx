@@ -6,7 +6,7 @@ const Features1 = ({ mainImgSrc, mainImgAlt = "", data = [] }) => {
   return (
     <>
       {/* Desktop view */}
-      <section className="hidden items-start justify-between md:flex">
+      <section className="hidden items-start justify-between px-8 md:flex">
         <div className="space-y-40">
           <div className="max-w-[220px] space-y-2">
             <h6 className="text-2xl font-light text-secondary-dark">
@@ -51,7 +51,7 @@ const Features1 = ({ mainImgSrc, mainImgAlt = "", data = [] }) => {
       </section>
 
       {/* Mobile view */}
-      <section className="md:hidden">
+      <section className="px-8 md:hidden">
         <img
           src={mainImgSrc}
           alt={mainImgAlt}
@@ -76,7 +76,7 @@ const Features1 = ({ mainImgSrc, mainImgAlt = "", data = [] }) => {
             </h6>
             <p className="font-extralight">{data[2].description}</p>
           </div>
-          <div className="col-span-1 mx-auto max-w-[220px] space-y-2">
+          <div className="col-span-1 max-w-[220px] space-y-2">
             <h6 className="text-xl font-light text-secondary-dark">
               {data[3].title}
             </h6>

@@ -10,16 +10,16 @@ const ServiceOverview = ({
   imageAlt = "",
 }) => {
   return (
-    <section className={`py-28 ${className}`}>
-      <div className="mx-auto max-w-6xl">
-        <Title variant="secondary" className="mb-20">
+    <section className={`py-10 md:py-28 ${className}`}>
+      <div className="mx-auto max-w-6xl px-8">
+        <Title variant="secondary" className="mb-6 md:mb-10 md:px-0">
           {title}
         </Title>
 
-        <div className="items-center lg:grid lg:grid-cols-2">
-          <div className="lg:grid-cols-1">
-            <div className="max-w-md space-y-7">
-              <h4 className="bg-secondary-gradient-semi-dark bg-clip-text text-3xl font-extralight italic text-transparent">
+        <div className="grid grid-cols-1 items-center md:grid-cols-2">
+          <div className="order-2 md:order-1 lg:grid-cols-1">
+            <div className="mx-auto max-w-md space-y-7 md:mx-0">
+              <h4 className="bg-secondary-gradient-semi-dark bg-clip-text text-center text-xl font-extralight italic text-transparent md:text-left md:text-2xl lg:text-3xl">
                 "{tagline}"
               </h4>
               {descriptionList.map((description, index) => (
@@ -27,7 +27,7 @@ const ServiceOverview = ({
               ))}
             </div>
           </div>
-          <div className="lg:grid-cols-1">
+          <div className="order-1 mb-6 md:order-2 md:mb-0 lg:grid-cols-1">
             <img
               src={image}
               alt={imageAlt}

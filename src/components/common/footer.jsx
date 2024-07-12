@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative flex max-h-full min-h-[435px] flex-col overflow-hidden">
+    <footer className="relative flex pt-10 md:pt-0 max-h-full min-h-[435px] flex-col overflow-hidden">
       <div className="absolute top-0 hidden h-full w-full md:block">
         <StaticImage
           src="../../assets/images/footer-bg.png"
@@ -57,7 +57,7 @@ const Footer = () => {
             <p className="mt-2 text-base font-light text-secondary-semi-light lg:text-center">
               {footerData.tagline}
             </p>
-            <div className="mx-auto mb-8 mt-2 flex max-w-max items-center gap-4 lg:mb-0 lg:mt-6">
+            <div className="mx-auto mb-8 mt-6 flex max-w-max items-center gap-4 lg:mb-0 lg:mt-6">
               <Link to={footerData.socialLinks.facebook} target="_blank">
                 <FacebookIcon className="aspect-square h-10 w-10" />
               </Link>

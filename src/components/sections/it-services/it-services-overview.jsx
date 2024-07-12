@@ -13,7 +13,7 @@ const ItServicesOverview = () => {
       ]}
       image={serviceFeatureImg}
       imageAlt="Manage IT Services"
-      className="pt-0"
+      className="pt-10 md:pt-0"
     />
   );
 };

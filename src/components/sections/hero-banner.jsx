@@ -10,7 +10,7 @@ const HeroBanner = ({
   ctaOnClick = () => {},
 }) => {
   return (
-    <section className="relative h-full min-h-[850px] sm:min-h-[1000px] max-h-full overflow-hidden md:h-[1248px]">
+    <section className="relative h-full max-h-full min-h-[850px] overflow-hidden sm:min-h-[1000px] md:h-[1248px]">
       <div className="absolute top-0 h-full w-full">
         <StaticImage
           src="../../assets/images/hero-banner-bg.png"
@@ -34,9 +34,9 @@ const HeroBanner = ({
         />
       </div>
 
-      <div className="max-w-xl relative mx-auto mt-28 space-y-8 px-8 py-6 md:mt-40 lg:max-w-3xl lg:px-8">
+      <div className="relative mx-auto mt-28 max-w-xl space-y-8 px-8 py-6 md:mt-40 lg:max-w-3xl lg:px-8">
         <Title variant="primary">{title}</Title>
-        <p className="mx-auto max-w-xl text-center text-xl font-light text-secondary-dark">
+        <p className="mx-auto max-w-lg text-center text-xl font-extralight text-secondary-dark md:font-light">
           {description}
         </p>
         <div className="flex justify-center">

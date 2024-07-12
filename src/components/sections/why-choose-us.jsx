@@ -33,7 +33,7 @@ const WhyChooseUs = ({ className = "" }) => {
   ];
 
   return (
-    <div className={`mx-auto max-w-6xl px-8 pb-28 pt-8 md:pt-28 ${className}`}>
+    <div className={`mx-auto max-w-6xl pb-28 pt-8 md:pt-28 ${className}`}>
       <Title variant="secondary" className="mb-6 md:mb-24">
         Why Choose Us
       </Title>

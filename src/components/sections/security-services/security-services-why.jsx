@@ -33,8 +33,8 @@ const whyUsData = [
 
 const SecurityServicesWhy = () => {
   return (
-    <section className="mx-auto max-w-6xl pb-28 pt-44">
-      <Title variant="secondary" className="mb-24">
+    <section className="mx-auto max-w-6xl pb-16 pt-20 lg:pb-28 lg:pt-44">
+      <Title variant="secondary" className="mb-10 md:mb-24">
         Why CybarWorks for Security services?
       </Title>
       <Features1

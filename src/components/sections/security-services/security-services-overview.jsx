@@ -13,7 +13,7 @@ const SecurityServicesOverview = () => {
       ]}
       image={serviceFeatureImg}
       imageAlt="Security Services"
-      className="pt-0"
+      className="pt-10 md:pt-0"
     />
   );
 };

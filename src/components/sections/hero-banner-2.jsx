@@ -14,7 +14,7 @@ const HeroBanner2 = ({
   artifactAnimation = "animate-pulse-float-5s",
 }) => {
   return (
-    <section className="relative h-[920px] max-h-full overflow-hidden">
+    <section className="relative md:h-[800px] lg:h-[920px] max-h-full overflow-hidden">
       <div className="absolute top-0 h-full w-full">
         <StaticImage
           src="../../assets/images/services-hero-bg.png"
@@ -28,12 +28,12 @@ const HeroBanner2 = ({
         />
       </div>
 
-      <div className="relative mx-auto mt-40 max-w-2xl space-y-8 p-6 lg:px-8">
+      <div className="relative mx-auto mt-16 max-w-lg space-y-6 p-6 md:mt-40 md:max-w-2xl md:space-y-8 lg:px-8">
         {artifact1 && (
           <img
             src={artifact1}
             alt="Artifact"
-            className={`absolute aspect-square h-full max-h-[352px] w-full max-w-[352px] lg:-left-[300px] lg:top-[180px] ${artifactAnimation}`}
+            className={`mx-auto -mb-6 aspect-square h-full max-h-[240px] w-full max-w-[240px] md:absolute md:-left-[60px] md:top-[320px] md:mx-0 md:mb-0 lg:-left-[300px] lg:top-[180px] lg:max-h-[352px] lg:max-w-[352px] ${artifactAnimation}`}
             width={352}
             height={352}
           />
@@ -42,7 +42,7 @@ const HeroBanner2 = ({
           <img
             src={artifact2}
             alt="Artifact"
-            className={`absolute aspect-square h-full max-h-[180px] w-full max-w-[180px] lg:-right-[160px] lg:-top-[80px] ${artifactAnimation}`}
+            className={`hidden md:block aspect-square h-full max-h-[140px] w-full max-w-[140px] md:absolute md:-right-[40px] md:-top-[100px] lg:-right-[160px] lg:-top-[80px] lg:max-h-[180px] lg:max-w-[180px] ${artifactAnimation}`}
             width={180}
             height={180}
             style={{ animationDelay: "1500ms" }}
@@ -50,7 +50,7 @@ const HeroBanner2 = ({
         )}
 
         <Title variant="primary">{title}</Title>
-        <p className="mx-auto max-w-lg text-center text-xl font-light text-secondary-dark">
+        <p className="mx-auto max-w-lg text-center text-xl font-extralight text-secondary-dark md:font-light">
           {description}
         </p>
         {cta && (
@@ -59,6 +59,17 @@ const HeroBanner2 = ({
               {ctaText}
             </AppButton>
           </div>
+        )}
+
+        {artifact2 && (
+          <img
+            src={artifact2}
+            alt="Artifact"
+            className={`mx-auto aspect-square h-full max-h-[140px] w-full max-w-[140px] md:hidden ${artifactAnimation}`}
+            width={180}
+            height={180}
+            style={{ animationDelay: "1500ms" }}
+          />
         )}
       </div>
     </section>
